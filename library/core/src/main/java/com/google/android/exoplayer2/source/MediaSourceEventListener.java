@@ -15,23 +15,26 @@
  */
 package com.google.android.exoplayer2.source;
 
-import android.net.Uri;
-import android.os.Handler;
-import android.os.Looper;
-import android.os.SystemClock;
-import android.support.annotation.CheckResult;
-import android.support.annotation.Nullable;
 import com.google.android.exoplayer2.C;
 import com.google.android.exoplayer2.Format;
 import com.google.android.exoplayer2.Player;
 import com.google.android.exoplayer2.source.MediaSource.MediaPeriodId;
 import com.google.android.exoplayer2.upstream.DataSpec;
 import com.google.android.exoplayer2.util.Assertions;
+
+import android.net.Uri;
+import android.os.Handler;
+import android.os.Looper;
+import android.os.SystemClock;
+
 import java.io.IOException;
 import java.util.Collections;
 import java.util.List;
 import java.util.Map;
 import java.util.concurrent.CopyOnWriteArrayList;
+
+import androidx.annotation.CheckResult;
+import androidx.annotation.Nullable;
 
 /** Interface for callbacks to be notified of {@link MediaSource} events. */
 public interface MediaSourceEventListener {

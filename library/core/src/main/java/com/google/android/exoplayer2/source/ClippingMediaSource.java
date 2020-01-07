@@ -15,19 +15,21 @@
  */
 package com.google.android.exoplayer2.source;
 
-import android.support.annotation.IntDef;
-import android.support.annotation.Nullable;
 import com.google.android.exoplayer2.C;
 import com.google.android.exoplayer2.ExoPlayer;
 import com.google.android.exoplayer2.Timeline;
 import com.google.android.exoplayer2.upstream.Allocator;
 import com.google.android.exoplayer2.upstream.TransferListener;
 import com.google.android.exoplayer2.util.Assertions;
+
 import java.io.IOException;
 import java.lang.annotation.Documented;
 import java.lang.annotation.Retention;
 import java.lang.annotation.RetentionPolicy;
 import java.util.ArrayList;
+
+import androidx.annotation.IntDef;
+import androidx.annotation.Nullable;
 
 /**
  * {@link MediaSource} that wraps a source and clips its timeline based on specified start/end

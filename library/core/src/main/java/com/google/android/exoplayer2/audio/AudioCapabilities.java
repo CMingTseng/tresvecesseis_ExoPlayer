@@ -22,8 +22,10 @@ import android.content.Intent;
 import android.content.IntentFilter;
 import android.media.AudioFormat;
 import android.media.AudioManager;
-import android.support.annotation.Nullable;
+
 import java.util.Arrays;
+
+import androidx.annotation.Nullable;
 
 /** Represents the set of audio formats that a device is capable of playing. */
 @TargetApi(21)

@@ -15,11 +15,12 @@
  */
 package com.google.android.exoplayer2.extractor.mp4;
 
-import android.support.annotation.Nullable;
 import com.google.android.exoplayer2.C;
 import com.google.android.exoplayer2.extractor.TrackOutput;
 import com.google.android.exoplayer2.util.Assertions;
 import com.google.android.exoplayer2.util.Log;
+
+import androidx.annotation.Nullable;
 
 /**
  * Encapsulates information parsed from a track encryption (tenc) box or sample group description 

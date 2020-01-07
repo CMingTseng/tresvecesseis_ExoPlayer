@@ -15,13 +15,16 @@
  */
 package com.google.android.exoplayer2.upstream;
 
-import android.net.Uri;
-import android.support.annotation.Nullable;
 import com.google.android.exoplayer2.C;
+
+import android.net.Uri;
+
 import java.io.IOException;
 import java.util.Collections;
 import java.util.List;
 import java.util.Map;
+
+import androidx.annotation.Nullable;
 
 /**
  * A component from which streams of data can be read.

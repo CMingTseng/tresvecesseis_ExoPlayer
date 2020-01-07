@@ -15,13 +15,15 @@
  */
 package com.google.android.exoplayer2.extractor.mkv;
 
-import android.support.annotation.IntDef;
 import com.google.android.exoplayer2.ParserException;
 import com.google.android.exoplayer2.extractor.ExtractorInput;
+
 import java.io.IOException;
 import java.lang.annotation.Documented;
 import java.lang.annotation.Retention;
 import java.lang.annotation.RetentionPolicy;
+
+import androidx.annotation.IntDef;
 
 /**
  * Defines EBML element IDs/types and reacts to events.

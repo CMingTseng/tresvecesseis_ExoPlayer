@@ -15,8 +15,6 @@
  */
 package com.google.android.exoplayer2;
 
-import android.support.annotation.Nullable;
-import android.util.Pair;
 import com.google.android.exoplayer2.Player.RepeatMode;
 import com.google.android.exoplayer2.source.MediaPeriod;
 import com.google.android.exoplayer2.source.MediaSource;
@@ -24,6 +22,10 @@ import com.google.android.exoplayer2.source.MediaSource.MediaPeriodId;
 import com.google.android.exoplayer2.trackselection.TrackSelector;
 import com.google.android.exoplayer2.upstream.Allocator;
 import com.google.android.exoplayer2.util.Assertions;
+
+import android.util.Pair;
+
+import androidx.annotation.Nullable;
 
 /**
  * Holds a queue of media periods, from the currently playing media period at the front to the
@@ -46,7 +48,8 @@ import com.google.android.exoplayer2.util.Assertions;
   private Timeline timeline;
   private @RepeatMode int repeatMode;
   private boolean shuffleModeEnabled;
-  private @Nullable MediaPeriodHolder playing;
+    private @Nullable
+    MediaPeriodHolder playing;
   private @Nullable MediaPeriodHolder reading;
   private @Nullable MediaPeriodHolder loading;
   private int length;

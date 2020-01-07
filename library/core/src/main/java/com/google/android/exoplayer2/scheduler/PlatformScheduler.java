@@ -15,6 +15,9 @@
  */
 package com.google.android.exoplayer2.scheduler;
 
+import com.google.android.exoplayer2.util.Log;
+import com.google.android.exoplayer2.util.Util;
+
 import android.annotation.TargetApi;
 import android.app.job.JobInfo;
 import android.app.job.JobParameters;
@@ -24,9 +27,8 @@ import android.content.ComponentName;
 import android.content.Context;
 import android.content.Intent;
 import android.os.PersistableBundle;
-import android.support.annotation.RequiresPermission;
-import com.google.android.exoplayer2.util.Log;
-import com.google.android.exoplayer2.util.Util;
+
+import androidx.annotation.RequiresPermission;
 
 /**
  * A {@link Scheduler} that uses {@link JobScheduler}. To use this scheduler, you must add {@link

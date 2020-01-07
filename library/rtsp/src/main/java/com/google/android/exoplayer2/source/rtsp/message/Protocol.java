@@ -15,9 +15,10 @@
  */
 package com.google.android.exoplayer2.source.rtsp.message;
 
-import android.support.annotation.Nullable;
 
 import java.io.IOException;
+
+import androidx.annotation.Nullable;
 
 /**
  * Protocols that RTSP implements.

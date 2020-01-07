@@ -15,10 +15,11 @@
  */
 package com.google.android.exoplayer2.upstream;
 
-import android.support.annotation.IntDef;
-import android.text.TextUtils;
 import com.google.android.exoplayer2.util.Predicate;
 import com.google.android.exoplayer2.util.Util;
+
+import android.text.TextUtils;
+
 import java.io.IOException;
 import java.lang.annotation.Documented;
 import java.lang.annotation.Retention;
@@ -27,6 +28,8 @@ import java.util.Collections;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
+
+import androidx.annotation.IntDef;
 
 /**
  * An HTTP {@link DataSource}.

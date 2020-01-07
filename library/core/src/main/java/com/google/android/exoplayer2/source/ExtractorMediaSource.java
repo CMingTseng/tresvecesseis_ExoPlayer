@@ -15,9 +15,6 @@
  */
 package com.google.android.exoplayer2.source;
 
-import android.net.Uri;
-import android.os.Handler;
-import android.support.annotation.Nullable;
 import com.google.android.exoplayer2.C;
 import com.google.android.exoplayer2.ExoPlayer;
 import com.google.android.exoplayer2.Player;
@@ -31,7 +28,13 @@ import com.google.android.exoplayer2.upstream.DefaultLoadErrorHandlingPolicy;
 import com.google.android.exoplayer2.upstream.LoadErrorHandlingPolicy;
 import com.google.android.exoplayer2.upstream.TransferListener;
 import com.google.android.exoplayer2.util.Assertions;
+
+import android.net.Uri;
+import android.os.Handler;
+
 import java.io.IOException;
+
+import androidx.annotation.Nullable;
 
 /**
  * Provides one period that loads data from a {@link Uri} and extracted using an {@link Extractor}.

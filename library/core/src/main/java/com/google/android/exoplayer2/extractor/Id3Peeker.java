@@ -16,12 +16,14 @@
 
 package com.google.android.exoplayer2.extractor;
 
-import android.support.annotation.Nullable;
 import com.google.android.exoplayer2.metadata.Metadata;
 import com.google.android.exoplayer2.metadata.id3.Id3Decoder;
 import com.google.android.exoplayer2.util.ParsableByteArray;
+
 import java.io.EOFException;
 import java.io.IOException;
+
+import androidx.annotation.Nullable;
 
 /**
  * Peeks data from the beginning of an {@link ExtractorInput} to determine if there is any ID3 tag.

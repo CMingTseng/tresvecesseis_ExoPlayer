@@ -15,12 +15,14 @@
  */
 package com.google.android.exoplayer2.metadata.id3;
 
-import static com.google.android.exoplayer2.util.Util.castNonNull;
-
 import android.os.Parcel;
 import android.os.Parcelable;
-import android.support.annotation.Nullable;
+
 import java.util.Arrays;
+
+import androidx.annotation.Nullable;
+
+import static com.google.android.exoplayer2.util.Util.castNonNull;
 
 /**
  * Binary ID3 frame.

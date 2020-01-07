@@ -15,9 +15,6 @@
  */
 package com.google.android.exoplayer2.source;
 
-import android.net.Uri;
-import android.os.Handler;
-import android.support.annotation.Nullable;
 import com.google.android.exoplayer2.ExoPlayer;
 import com.google.android.exoplayer2.Format;
 import com.google.android.exoplayer2.Timeline;
@@ -28,7 +25,13 @@ import com.google.android.exoplayer2.upstream.DefaultLoadErrorHandlingPolicy;
 import com.google.android.exoplayer2.upstream.LoadErrorHandlingPolicy;
 import com.google.android.exoplayer2.upstream.TransferListener;
 import com.google.android.exoplayer2.util.Assertions;
+
+import android.net.Uri;
+import android.os.Handler;
+
 import java.io.IOException;
+
+import androidx.annotation.Nullable;
 
 /**
  * Loads data at a given {@link Uri} as a single sample belonging to a single {@link MediaPeriod}.

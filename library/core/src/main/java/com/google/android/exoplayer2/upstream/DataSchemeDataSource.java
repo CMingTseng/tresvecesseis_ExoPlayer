@@ -15,14 +15,17 @@
  */
 package com.google.android.exoplayer2.upstream;
 
-import android.net.Uri;
-import android.support.annotation.Nullable;
-import android.util.Base64;
 import com.google.android.exoplayer2.C;
 import com.google.android.exoplayer2.ParserException;
 import com.google.android.exoplayer2.util.Util;
+
+import android.net.Uri;
+import android.util.Base64;
+
 import java.io.IOException;
 import java.net.URLDecoder;
+
+import androidx.annotation.Nullable;
 
 /** A {@link DataSource} for reading data URLs, as defined by RFC 2397. */
 public final class DataSchemeDataSource extends BaseDataSource {

@@ -15,7 +15,6 @@
  */
 package com.google.android.exoplayer2.source;
 
-import android.support.annotation.Nullable;
 import com.google.android.exoplayer2.C;
 import com.google.android.exoplayer2.Format;
 import com.google.android.exoplayer2.FormatHolder;
@@ -26,9 +25,12 @@ import com.google.android.exoplayer2.source.SampleMetadataQueue.SampleExtrasHold
 import com.google.android.exoplayer2.upstream.Allocation;
 import com.google.android.exoplayer2.upstream.Allocator;
 import com.google.android.exoplayer2.util.ParsableByteArray;
+
 import java.io.EOFException;
 import java.io.IOException;
 import java.nio.ByteBuffer;
+
+import androidx.annotation.Nullable;
 
 /**
  * A queue of media samples.

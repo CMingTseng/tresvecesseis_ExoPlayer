@@ -15,8 +15,8 @@
  */
 package com.google.android.exoplayer2.upstream.cache;
 
-import android.support.annotation.Nullable;
 import com.google.android.exoplayer2.C;
+
 import java.io.DataInputStream;
 import java.io.DataOutputStream;
 import java.io.IOException;
@@ -28,6 +28,8 @@ import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 import java.util.Map.Entry;
+
+import androidx.annotation.Nullable;
 
 /** Default implementation of {@link ContentMetadata}. Values are stored as byte arrays. */
 public final class DefaultContentMetadata implements ContentMetadata {

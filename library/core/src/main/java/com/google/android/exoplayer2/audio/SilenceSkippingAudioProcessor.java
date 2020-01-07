@@ -15,15 +15,17 @@
  */
 package com.google.android.exoplayer2.audio;
 
-import android.support.annotation.IntDef;
 import com.google.android.exoplayer2.C;
 import com.google.android.exoplayer2.Format;
 import com.google.android.exoplayer2.util.Util;
+
 import java.lang.annotation.Documented;
 import java.lang.annotation.Retention;
 import java.lang.annotation.RetentionPolicy;
 import java.nio.ByteBuffer;
 import java.nio.ByteOrder;
+
+import androidx.annotation.IntDef;
 
 /**
  * An {@link AudioProcessor} that skips silence in the input stream. Input and output are 16-bit

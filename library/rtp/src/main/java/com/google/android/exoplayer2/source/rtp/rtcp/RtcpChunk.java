@@ -15,9 +15,9 @@
  */
 package com.google.android.exoplayer2.source.rtp.rtcp;
 
-import android.support.annotation.Nullable;
-
 import java.util.Arrays;
+
+import androidx.annotation.Nullable;
 
 /**
  * This class wraps a RTCP Chunk.

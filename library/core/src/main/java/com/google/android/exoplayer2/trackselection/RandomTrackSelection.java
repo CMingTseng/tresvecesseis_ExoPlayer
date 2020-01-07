@@ -15,15 +15,18 @@
  */
 package com.google.android.exoplayer2.trackselection;
 
-import android.os.SystemClock;
-import android.support.annotation.Nullable;
 import com.google.android.exoplayer2.C;
 import com.google.android.exoplayer2.source.TrackGroup;
 import com.google.android.exoplayer2.source.chunk.MediaChunk;
 import com.google.android.exoplayer2.source.chunk.MediaChunkIterator;
 import com.google.android.exoplayer2.upstream.BandwidthMeter;
+
+import android.os.SystemClock;
+
 import java.util.List;
 import java.util.Random;
+
+import androidx.annotation.Nullable;
 
 /**
  * A {@link TrackSelection} whose selected track is updated randomly.

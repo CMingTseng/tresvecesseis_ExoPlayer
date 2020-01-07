@@ -15,12 +15,14 @@
  */
 package com.google.android.exoplayer2.util;
 
-import android.support.annotation.IntDef;
-import android.support.annotation.Nullable;
 import android.text.TextUtils;
+
 import java.lang.annotation.Documented;
 import java.lang.annotation.Retention;
 import java.lang.annotation.RetentionPolicy;
+
+import androidx.annotation.IntDef;
+import androidx.annotation.Nullable;
 
 /** Wrapper around {@link android.util.Log} which allows to set the log level. */
 public final class Log {

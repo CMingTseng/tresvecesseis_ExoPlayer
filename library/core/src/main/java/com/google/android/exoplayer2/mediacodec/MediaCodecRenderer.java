@@ -15,18 +15,6 @@
  */
 package com.google.android.exoplayer2.mediacodec;
 
-import android.annotation.TargetApi;
-import android.media.MediaCodec;
-import android.media.MediaCodec.CodecException;
-import android.media.MediaCodec.CryptoException;
-import android.media.MediaCrypto;
-import android.media.MediaFormat;
-import android.os.Bundle;
-import android.os.Looper;
-import android.os.SystemClock;
-import android.support.annotation.CheckResult;
-import android.support.annotation.IntDef;
-import android.support.annotation.Nullable;
 import com.google.android.exoplayer2.BaseRenderer;
 import com.google.android.exoplayer2.C;
 import com.google.android.exoplayer2.ExoPlaybackException;
@@ -46,6 +34,17 @@ import com.google.android.exoplayer2.util.NalUnitUtil;
 import com.google.android.exoplayer2.util.TimedValueQueue;
 import com.google.android.exoplayer2.util.TraceUtil;
 import com.google.android.exoplayer2.util.Util;
+
+import android.annotation.TargetApi;
+import android.media.MediaCodec;
+import android.media.MediaCodec.CodecException;
+import android.media.MediaCodec.CryptoException;
+import android.media.MediaCrypto;
+import android.media.MediaFormat;
+import android.os.Bundle;
+import android.os.Looper;
+import android.os.SystemClock;
+
 import java.lang.annotation.Documented;
 import java.lang.annotation.Retention;
 import java.lang.annotation.RetentionPolicy;
@@ -53,6 +52,10 @@ import java.nio.ByteBuffer;
 import java.util.ArrayDeque;
 import java.util.ArrayList;
 import java.util.List;
+
+import androidx.annotation.CheckResult;
+import androidx.annotation.IntDef;
+import androidx.annotation.Nullable;
 
 /**
  * An abstract renderer that uses {@link MediaCodec} to decode samples for rendering.
@@ -533,7 +536,8 @@ public abstract class MediaCodecRenderer extends BaseRenderer {
     return codec;
   }
 
-  protected final @Nullable MediaCodecInfo getCodecInfo() {
+    protected final @Nullable
+    MediaCodecInfo getCodecInfo() {
     return codecInfo;
   }
 

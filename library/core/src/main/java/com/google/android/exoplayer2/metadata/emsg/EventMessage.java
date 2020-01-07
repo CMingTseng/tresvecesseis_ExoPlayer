@@ -15,14 +15,17 @@
  */
 package com.google.android.exoplayer2.metadata.emsg;
 
-import static com.google.android.exoplayer2.util.Util.castNonNull;
+import com.google.android.exoplayer2.metadata.Metadata;
+import com.google.android.exoplayer2.util.Util;
 
 import android.os.Parcel;
 import android.os.Parcelable;
-import android.support.annotation.Nullable;
-import com.google.android.exoplayer2.metadata.Metadata;
-import com.google.android.exoplayer2.util.Util;
+
 import java.util.Arrays;
+
+import androidx.annotation.Nullable;
+
+import static com.google.android.exoplayer2.util.Util.castNonNull;
 
 /**
  * An Event Message (emsg) as defined in ISO 23009-1.

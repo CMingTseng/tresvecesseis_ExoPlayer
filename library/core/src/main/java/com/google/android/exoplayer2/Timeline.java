@@ -15,10 +15,12 @@
  */
 package com.google.android.exoplayer2;
 
-import android.support.annotation.Nullable;
-import android.util.Pair;
 import com.google.android.exoplayer2.source.ads.AdPlaybackState;
 import com.google.android.exoplayer2.util.Assertions;
+
+import android.util.Pair;
+
+import androidx.annotation.Nullable;
 
 /**
  * A flexible representation of the structure of media. A timeline is able to represent the

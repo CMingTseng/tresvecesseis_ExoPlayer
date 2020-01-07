@@ -17,11 +17,13 @@ package com.google.android.exoplayer2.text;
 
 import android.graphics.Bitmap;
 import android.graphics.Color;
-import android.support.annotation.IntDef;
 import android.text.Layout.Alignment;
+
 import java.lang.annotation.Documented;
 import java.lang.annotation.Retention;
 import java.lang.annotation.RetentionPolicy;
+
+import androidx.annotation.IntDef;
 
 /**
  * Contains information about a specific cue, including textual content and formatting data.

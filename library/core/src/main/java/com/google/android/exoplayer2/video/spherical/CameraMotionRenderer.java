@@ -15,7 +15,6 @@
  */
 package com.google.android.exoplayer2.video.spherical;
 
-import android.support.annotation.Nullable;
 import com.google.android.exoplayer2.BaseRenderer;
 import com.google.android.exoplayer2.C;
 import com.google.android.exoplayer2.ExoPlaybackException;
@@ -26,7 +25,10 @@ import com.google.android.exoplayer2.decoder.DecoderInputBuffer;
 import com.google.android.exoplayer2.util.MimeTypes;
 import com.google.android.exoplayer2.util.ParsableByteArray;
 import com.google.android.exoplayer2.util.Util;
+
 import java.nio.ByteBuffer;
+
+import androidx.annotation.Nullable;
 
 /** A {@link Renderer} that parses the camera motion track. */
 public class CameraMotionRenderer extends BaseRenderer {

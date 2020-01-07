@@ -15,10 +15,11 @@
  */
 package com.google.android.exoplayer2.source.sdp.core;
 
-import android.support.annotation.Nullable;
 
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
+
+import androidx.annotation.Nullable;
 
 public final class SessionName {
     private static final Pattern regexSDPSession = Pattern.compile("(.+)",

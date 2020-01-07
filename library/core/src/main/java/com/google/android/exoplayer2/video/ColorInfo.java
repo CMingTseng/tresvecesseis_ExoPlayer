@@ -15,13 +15,16 @@
  */
 package com.google.android.exoplayer2.video;
 
-import android.os.Parcel;
-import android.os.Parcelable;
-import android.support.annotation.Nullable;
 import com.google.android.exoplayer2.C;
 import com.google.android.exoplayer2.Format;
 import com.google.android.exoplayer2.util.Util;
+
+import android.os.Parcel;
+import android.os.Parcelable;
+
 import java.util.Arrays;
+
+import androidx.annotation.Nullable;
 
 /**
  * Stores color info.

@@ -15,8 +15,6 @@
  */
 package com.google.android.exoplayer2.source.chunk;
 
-import android.support.annotation.Nullable;
-import android.util.SparseArray;
 import com.google.android.exoplayer2.C;
 import com.google.android.exoplayer2.Format;
 import com.google.android.exoplayer2.extractor.DummyTrackOutput;
@@ -27,7 +25,12 @@ import com.google.android.exoplayer2.extractor.SeekMap;
 import com.google.android.exoplayer2.extractor.TrackOutput;
 import com.google.android.exoplayer2.util.Assertions;
 import com.google.android.exoplayer2.util.ParsableByteArray;
+
+import android.util.SparseArray;
+
 import java.io.IOException;
+
+import androidx.annotation.Nullable;
 
 /**
  * An {@link Extractor} wrapper for loading chunks that contain a single primary track, and possibly

@@ -15,14 +15,16 @@
  */
 package com.google.android.exoplayer2;
 
-import android.support.annotation.Nullable;
 import com.google.android.exoplayer2.decoder.DecoderInputBuffer;
 import com.google.android.exoplayer2.drm.DrmInitData;
 import com.google.android.exoplayer2.drm.DrmSessionManager;
 import com.google.android.exoplayer2.source.SampleStream;
 import com.google.android.exoplayer2.util.Assertions;
 import com.google.android.exoplayer2.util.MediaClock;
+
 import java.io.IOException;
+
+import androidx.annotation.Nullable;
 
 /**
  * An abstract base class suitable for most {@link Renderer} implementations.

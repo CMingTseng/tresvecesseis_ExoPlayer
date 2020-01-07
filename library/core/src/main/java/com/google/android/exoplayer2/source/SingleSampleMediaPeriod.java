@@ -15,7 +15,6 @@
  */
 package com.google.android.exoplayer2.source;
 
-import android.support.annotation.Nullable;
 import com.google.android.exoplayer2.C;
 import com.google.android.exoplayer2.Format;
 import com.google.android.exoplayer2.FormatHolder;
@@ -33,9 +32,12 @@ import com.google.android.exoplayer2.upstream.StatsDataSource;
 import com.google.android.exoplayer2.upstream.TransferListener;
 import com.google.android.exoplayer2.util.MimeTypes;
 import com.google.android.exoplayer2.util.Util;
+
 import java.io.IOException;
 import java.util.ArrayList;
 import java.util.Arrays;
+
+import androidx.annotation.Nullable;
 
 /**
  * A {@link MediaPeriod} with a single sample.

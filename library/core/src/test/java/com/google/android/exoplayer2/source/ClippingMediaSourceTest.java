@@ -15,11 +15,6 @@
  */
 package com.google.android.exoplayer2.source;
 
-import static com.google.common.truth.Truth.assertThat;
-import static org.junit.Assert.fail;
-
-import android.os.Handler;
-import android.support.annotation.Nullable;
 import com.google.android.exoplayer2.C;
 import com.google.android.exoplayer2.Player;
 import com.google.android.exoplayer2.Timeline;
@@ -38,12 +33,21 @@ import com.google.android.exoplayer2.testutil.RobolectricUtil;
 import com.google.android.exoplayer2.testutil.TimelineAsserts;
 import com.google.android.exoplayer2.upstream.Allocator;
 import com.google.android.exoplayer2.upstream.TransferListener;
-import java.io.IOException;
+
+import android.os.Handler;
+
 import org.junit.Before;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.robolectric.RobolectricTestRunner;
 import org.robolectric.annotation.Config;
+
+import java.io.IOException;
+
+import androidx.annotation.Nullable;
+
+import static com.google.common.truth.Truth.assertThat;
+import static org.junit.Assert.fail;
 
 /** Unit tests for {@link ClippingMediaSource}. */
 @RunWith(RobolectricTestRunner.class)

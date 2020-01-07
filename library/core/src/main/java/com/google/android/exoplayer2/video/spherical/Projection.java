@@ -15,13 +15,15 @@
  */
 package com.google.android.exoplayer2.video.spherical;
 
-import android.support.annotation.IntDef;
 import com.google.android.exoplayer2.C;
 import com.google.android.exoplayer2.C.StereoMode;
 import com.google.android.exoplayer2.util.Assertions;
+
 import java.lang.annotation.Documented;
 import java.lang.annotation.Retention;
 import java.lang.annotation.RetentionPolicy;
+
+import androidx.annotation.IntDef;
 
 /** The projection mesh used with 360/VR videos. */
 public final class Projection {

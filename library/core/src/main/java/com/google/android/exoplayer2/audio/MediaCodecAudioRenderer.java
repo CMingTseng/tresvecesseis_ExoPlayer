@@ -15,15 +15,6 @@
  */
 package com.google.android.exoplayer2.audio;
 
-import android.annotation.SuppressLint;
-import android.annotation.TargetApi;
-import android.content.Context;
-import android.media.MediaCodec;
-import android.media.MediaCrypto;
-import android.media.MediaFormat;
-import android.media.audiofx.Virtualizer;
-import android.os.Handler;
-import android.support.annotation.Nullable;
 import com.google.android.exoplayer2.C;
 import com.google.android.exoplayer2.ExoPlaybackException;
 import com.google.android.exoplayer2.ExoPlayer;
@@ -44,9 +35,21 @@ import com.google.android.exoplayer2.util.Log;
 import com.google.android.exoplayer2.util.MediaClock;
 import com.google.android.exoplayer2.util.MimeTypes;
 import com.google.android.exoplayer2.util.Util;
+
+import android.annotation.SuppressLint;
+import android.annotation.TargetApi;
+import android.content.Context;
+import android.media.MediaCodec;
+import android.media.MediaCrypto;
+import android.media.MediaFormat;
+import android.media.audiofx.Virtualizer;
+import android.os.Handler;
+
 import java.nio.ByteBuffer;
 import java.util.Collections;
 import java.util.List;
+
+import androidx.annotation.Nullable;
 
 /**
  * Decodes and renders audio using {@link MediaCodec} and an {@link AudioSink}.

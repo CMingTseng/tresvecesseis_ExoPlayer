@@ -15,11 +15,6 @@
  */
 package com.google.android.exoplayer2;
 
-import android.content.Context;
-import android.os.Handler;
-import android.os.Looper;
-import android.support.annotation.IntDef;
-import android.support.annotation.Nullable;
 import com.google.android.exoplayer2.audio.AudioCapabilities;
 import com.google.android.exoplayer2.audio.AudioProcessor;
 import com.google.android.exoplayer2.audio.AudioRendererEventListener;
@@ -36,11 +31,19 @@ import com.google.android.exoplayer2.util.Log;
 import com.google.android.exoplayer2.video.MediaCodecVideoRenderer;
 import com.google.android.exoplayer2.video.VideoRendererEventListener;
 import com.google.android.exoplayer2.video.spherical.CameraMotionRenderer;
+
+import android.content.Context;
+import android.os.Handler;
+import android.os.Looper;
+
 import java.lang.annotation.Documented;
 import java.lang.annotation.Retention;
 import java.lang.annotation.RetentionPolicy;
 import java.lang.reflect.Constructor;
 import java.util.ArrayList;
+
+import androidx.annotation.IntDef;
+import androidx.annotation.Nullable;
 
 /**
  * Default {@link RenderersFactory} implementation.

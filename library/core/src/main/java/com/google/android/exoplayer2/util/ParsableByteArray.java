@@ -15,10 +15,12 @@
  */
 package com.google.android.exoplayer2.util;
 
-import android.support.annotation.Nullable;
 import com.google.android.exoplayer2.C;
+
 import java.nio.ByteBuffer;
 import java.nio.charset.Charset;
+
+import androidx.annotation.Nullable;
 
 /**
  * Wraps a byte array, providing a set of methods for parsing data from it. Numerical values are

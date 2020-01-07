@@ -15,11 +15,13 @@
  */
 package com.google.android.exoplayer2;
 
-import android.support.annotation.Nullable;
 import com.google.android.exoplayer2.source.SampleStream;
 import com.google.android.exoplayer2.util.Assertions;
 import com.google.android.exoplayer2.util.MediaClock;
+
 import java.io.IOException;
+
+import androidx.annotation.Nullable;
 
 /**
  * A {@link Renderer} implementation whose track type is {@link C#TRACK_TYPE_NONE} and does not

@@ -15,18 +15,21 @@
  */
 package com.google.android.exoplayer2.text.subrip;
 
-import android.support.annotation.Nullable;
-import android.text.Html;
-import android.text.Spanned;
-import android.text.TextUtils;
 import com.google.android.exoplayer2.text.Cue;
 import com.google.android.exoplayer2.text.SimpleSubtitleDecoder;
 import com.google.android.exoplayer2.util.Log;
 import com.google.android.exoplayer2.util.LongArray;
 import com.google.android.exoplayer2.util.ParsableByteArray;
+
+import android.text.Html;
+import android.text.Spanned;
+import android.text.TextUtils;
+
 import java.util.ArrayList;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
+
+import androidx.annotation.Nullable;
 
 /**
  * A {@link SimpleSubtitleDecoder} for SubRip.

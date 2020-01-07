@@ -15,9 +15,6 @@
  */
 package com.google.android.exoplayer2.source.rtp.upstream;
 
-import android.net.Uri;
-import android.support.annotation.Nullable;
-
 import com.google.android.exoplayer2.ExoPlayerLibraryInfo;
 import com.google.android.exoplayer2.source.rtp.rtcp.RtcpByePacket;
 import com.google.android.exoplayer2.source.rtp.rtcp.RtcpChunk;
@@ -33,11 +30,15 @@ import com.google.android.exoplayer2.upstream.DataSpec;
 import com.google.android.exoplayer2.upstream.UdpDataSink;
 import com.google.android.exoplayer2.upstream.UdpDataSinkSource;
 
+import android.net.Uri;
+
 import java.io.IOException;
 import java.util.Random;
 import java.util.concurrent.ExecutorService;
 import java.util.concurrent.Executors;
 import java.util.concurrent.RejectedExecutionException;
+
+import androidx.annotation.Nullable;
 
 /* package */ final class RtcpStatsFeedback implements RtcpReportReceiver.EventListener,
         RtcpReportSender.EventListener {

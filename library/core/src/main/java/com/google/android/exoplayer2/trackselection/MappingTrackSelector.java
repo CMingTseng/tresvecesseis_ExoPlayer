@@ -15,9 +15,6 @@
  */
 package com.google.android.exoplayer2.trackselection;
 
-import android.support.annotation.IntDef;
-import android.support.annotation.Nullable;
-import android.util.Pair;
 import com.google.android.exoplayer2.C;
 import com.google.android.exoplayer2.ExoPlaybackException;
 import com.google.android.exoplayer2.Renderer;
@@ -28,11 +25,18 @@ import com.google.android.exoplayer2.source.MediaSource.MediaPeriodId;
 import com.google.android.exoplayer2.source.TrackGroup;
 import com.google.android.exoplayer2.source.TrackGroupArray;
 import com.google.android.exoplayer2.util.Util;
+
+import android.util.Pair;
+
+import org.checkerframework.checker.nullness.compatqual.NullableType;
+
 import java.lang.annotation.Documented;
 import java.lang.annotation.Retention;
 import java.lang.annotation.RetentionPolicy;
 import java.util.Arrays;
-import org.checkerframework.checker.nullness.compatqual.NullableType;
+
+import androidx.annotation.IntDef;
+import androidx.annotation.Nullable;
 
 /**
  * Base class for {@link TrackSelector}s that first establish a mapping between {@link TrackGroup}s

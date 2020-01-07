@@ -15,12 +15,6 @@
  */
 package com.google.android.exoplayer2.source.ads;
 
-import android.net.Uri;
-import android.os.Handler;
-import android.os.Looper;
-import android.support.annotation.IntDef;
-import android.support.annotation.Nullable;
-import android.view.ViewGroup;
 import com.google.android.exoplayer2.C;
 import com.google.android.exoplayer2.ExoPlayer;
 import com.google.android.exoplayer2.Timeline;
@@ -38,6 +32,12 @@ import com.google.android.exoplayer2.upstream.DataSource;
 import com.google.android.exoplayer2.upstream.DataSpec;
 import com.google.android.exoplayer2.upstream.TransferListener;
 import com.google.android.exoplayer2.util.Assertions;
+
+import android.net.Uri;
+import android.os.Handler;
+import android.os.Looper;
+import android.view.ViewGroup;
+
 import java.io.IOException;
 import java.lang.annotation.Documented;
 import java.lang.annotation.Retention;
@@ -48,6 +48,9 @@ import java.util.Collections;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
+
+import androidx.annotation.IntDef;
+import androidx.annotation.Nullable;
 
 /**
  * A {@link MediaSource} that inserts ads linearly with a provided content media source. This source

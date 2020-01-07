@@ -15,10 +15,11 @@
  */
 package com.google.android.exoplayer2;
 
-import android.support.annotation.Nullable;
 import com.google.android.exoplayer2.util.Clock;
 import com.google.android.exoplayer2.util.MediaClock;
 import com.google.android.exoplayer2.util.StandaloneMediaClock;
+
+import androidx.annotation.Nullable;
 
 /**
  * Default {@link MediaClock} which uses a renderer media clock and falls back to a
@@ -43,7 +44,8 @@ import com.google.android.exoplayer2.util.StandaloneMediaClock;
   private final StandaloneMediaClock standaloneMediaClock;
   private final PlaybackParameterListener listener;
 
-  private @Nullable Renderer rendererClockSource;
+    private @Nullable
+    Renderer rendererClockSource;
   private @Nullable MediaClock rendererClock;
 
   private boolean started;

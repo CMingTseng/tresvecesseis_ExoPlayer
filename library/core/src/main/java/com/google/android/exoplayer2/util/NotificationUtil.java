@@ -21,12 +21,14 @@ import android.app.NotificationChannel;
 import android.app.NotificationManager;
 import android.content.Context;
 import android.content.Intent;
-import android.support.annotation.IntDef;
-import android.support.annotation.Nullable;
-import android.support.annotation.StringRes;
+
 import java.lang.annotation.Documented;
 import java.lang.annotation.Retention;
 import java.lang.annotation.RetentionPolicy;
+
+import androidx.annotation.IntDef;
+import androidx.annotation.Nullable;
+import androidx.annotation.StringRes;
 
 /** Utility methods for displaying {@link android.app.Notification}s. */
 @SuppressLint("InlinedApi")
@@ -79,7 +81,7 @@ public final class NotificationUtil {
    *     #IMPORTANCE_DEFAULT} and {@link #IMPORTANCE_HIGH}.
    */
   public static void createNotificationChannel(
-      Context context, String id, @StringRes int name, @Importance int importance) {
+          Context context, String id, @StringRes int name, @Importance int importance) {
     if (Util.SDK_INT >= 26) {
       NotificationManager notificationManager =
           (NotificationManager) context.getSystemService(Context.NOTIFICATION_SERVICE);

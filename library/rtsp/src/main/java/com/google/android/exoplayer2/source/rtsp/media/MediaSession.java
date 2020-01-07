@@ -15,9 +15,6 @@
  */
 package com.google.android.exoplayer2.source.rtsp.media;
 
-import android.net.Uri;
-import android.support.annotation.IntDef;
-
 import com.google.android.exoplayer2.C;
 import com.google.android.exoplayer2.source.rtsp.RtspSampleStreamWrapper;
 import com.google.android.exoplayer2.source.rtsp.core.Client;
@@ -25,6 +22,8 @@ import com.google.android.exoplayer2.source.rtsp.message.InterleavedFrame;
 import com.google.android.exoplayer2.source.rtsp.message.Range;
 import com.google.android.exoplayer2.source.rtsp.message.Transport;
 import com.google.android.exoplayer2.video.VideoListener;
+
+import android.net.Uri;
 
 import java.lang.annotation.Retention;
 import java.lang.annotation.RetentionPolicy;
@@ -38,6 +37,8 @@ import java.util.concurrent.ConcurrentLinkedQueue;
 import java.util.concurrent.CopyOnWriteArraySet;
 import java.util.concurrent.ExecutorService;
 import java.util.concurrent.Executors;
+
+import androidx.annotation.IntDef;
 
 import static com.google.android.exoplayer2.source.rtsp.core.Client.FLAG_ENABLE_RTCP_SUPPORT;
 import static com.google.android.exoplayer2.source.rtsp.core.Client.FLAG_FORCE_RTCP_MUXED;

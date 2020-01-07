@@ -15,8 +15,6 @@
  */
 package com.google.android.exoplayer2;
 
-import android.os.Looper;
-import android.support.annotation.Nullable;
 import com.google.android.exoplayer2.audio.MediaCodecAudioRenderer;
 import com.google.android.exoplayer2.metadata.MetadataRenderer;
 import com.google.android.exoplayer2.source.ClippingMediaSource;
@@ -31,6 +29,10 @@ import com.google.android.exoplayer2.trackselection.DefaultTrackSelector;
 import com.google.android.exoplayer2.trackselection.TrackSelector;
 import com.google.android.exoplayer2.upstream.DataSource;
 import com.google.android.exoplayer2.video.MediaCodecVideoRenderer;
+
+import android.os.Looper;
+
+import androidx.annotation.Nullable;
 
 /**
  * An extensible media player that plays {@link MediaSource}s. Instances can be obtained from {@link

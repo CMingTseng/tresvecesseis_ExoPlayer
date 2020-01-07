@@ -15,12 +15,12 @@
  */
 package com.google.android.exoplayer2.upstream.cache;
 
-import android.os.ConditionVariable;
-import android.support.annotation.NonNull;
-import android.support.annotation.Nullable;
 import com.google.android.exoplayer2.C;
 import com.google.android.exoplayer2.util.Assertions;
 import com.google.android.exoplayer2.util.Log;
+
+import android.os.ConditionVariable;
+
 import java.io.File;
 import java.util.ArrayList;
 import java.util.HashMap;
@@ -28,6 +28,9 @@ import java.util.HashSet;
 import java.util.NavigableSet;
 import java.util.Set;
 import java.util.TreeSet;
+
+import androidx.annotation.NonNull;
+import androidx.annotation.Nullable;
 
 /**
  * A {@link Cache} implementation that maintains an in-memory representation. Note, only one

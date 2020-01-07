@@ -15,9 +15,11 @@
  */
 package com.google.android.exoplayer2;
 
-import android.os.Handler;
-import android.support.annotation.Nullable;
 import com.google.android.exoplayer2.util.Assertions;
+
+import android.os.Handler;
+
+import androidx.annotation.Nullable;
 
 /**
  * Defines a player message which can be sent with a {@link Sender} and received by a {@link

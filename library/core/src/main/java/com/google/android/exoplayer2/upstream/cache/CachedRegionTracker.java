@@ -15,13 +15,17 @@
  */
 package com.google.android.exoplayer2.upstream.cache;
 
-import android.support.annotation.NonNull;
+
 import com.google.android.exoplayer2.extractor.ChunkIndex;
-import com.google.android.exoplayer2.util.Log;
+
+import android.util.Log;
+
 import java.util.Arrays;
 import java.util.Iterator;
 import java.util.NavigableSet;
 import java.util.TreeSet;
+
+import androidx.annotation.NonNull;
 
 /**
  * Utility class for efficiently tracking regions of data that are stored in a {@link Cache}

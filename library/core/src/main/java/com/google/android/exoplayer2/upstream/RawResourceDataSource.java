@@ -15,17 +15,20 @@
  */
 package com.google.android.exoplayer2.upstream;
 
+import com.google.android.exoplayer2.C;
+
 import android.content.Context;
 import android.content.res.AssetFileDescriptor;
 import android.content.res.Resources;
 import android.net.Uri;
-import android.support.annotation.Nullable;
 import android.text.TextUtils;
-import com.google.android.exoplayer2.C;
+
 import java.io.EOFException;
 import java.io.FileInputStream;
 import java.io.IOException;
 import java.io.InputStream;
+
+import androidx.annotation.Nullable;
 
 /**
  * A {@link DataSource} for reading a raw resource inside the APK.

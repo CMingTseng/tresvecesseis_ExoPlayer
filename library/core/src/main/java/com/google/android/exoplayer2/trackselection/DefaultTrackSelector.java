@@ -15,16 +15,6 @@
  */
 package com.google.android.exoplayer2.trackselection;
 
-import android.content.Context;
-import android.graphics.Point;
-import android.os.Parcel;
-import android.os.Parcelable;
-import android.support.annotation.NonNull;
-import android.support.annotation.Nullable;
-import android.text.TextUtils;
-import android.util.Pair;
-import android.util.SparseArray;
-import android.util.SparseBooleanArray;
 import com.google.android.exoplayer2.C;
 import com.google.android.exoplayer2.ExoPlaybackException;
 import com.google.android.exoplayer2.ExoPlayerFactory;
@@ -38,6 +28,18 @@ import com.google.android.exoplayer2.source.TrackGroupArray;
 import com.google.android.exoplayer2.upstream.BandwidthMeter;
 import com.google.android.exoplayer2.util.Assertions;
 import com.google.android.exoplayer2.util.Util;
+
+import android.content.Context;
+import android.graphics.Point;
+import android.os.Parcel;
+import android.os.Parcelable;
+import android.text.TextUtils;
+import android.util.Pair;
+import android.util.SparseArray;
+import android.util.SparseBooleanArray;
+
+import org.checkerframework.checker.nullness.compatqual.NullableType;
+
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.HashMap;
@@ -45,7 +47,9 @@ import java.util.HashSet;
 import java.util.List;
 import java.util.Map;
 import java.util.concurrent.atomic.AtomicReference;
-import org.checkerframework.checker.nullness.compatqual.NullableType;
+
+import androidx.annotation.NonNull;
+import androidx.annotation.Nullable;
 
 /**
  * A default {@link TrackSelector} suitable for most use cases. Track selections are made according

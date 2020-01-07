@@ -15,10 +15,11 @@
  */
 package com.google.android.exoplayer2.source.rtp.format;
 
-import android.support.annotation.Nullable;
 
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
+
+import androidx.annotation.Nullable;
 
 public class FormatSpecificParameter {
     private static final Pattern regexMediaAttribute = Pattern.compile("([a-zA-Z-]+)=\\s*(.+)|(\\w+)",

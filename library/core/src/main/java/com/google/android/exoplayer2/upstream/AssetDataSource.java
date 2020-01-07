@@ -15,14 +15,17 @@
  */
 package com.google.android.exoplayer2.upstream;
 
+import com.google.android.exoplayer2.C;
+
 import android.content.Context;
 import android.content.res.AssetManager;
 import android.net.Uri;
-import android.support.annotation.Nullable;
-import com.google.android.exoplayer2.C;
+
 import java.io.EOFException;
 import java.io.IOException;
 import java.io.InputStream;
+
+import androidx.annotation.Nullable;
 
 /** A {@link DataSource} for reading from a local asset. */
 public final class AssetDataSource extends BaseDataSource {

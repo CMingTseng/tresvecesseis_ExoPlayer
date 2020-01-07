@@ -15,12 +15,15 @@
  */
 package com.google.android.exoplayer2.upstream;
 
-import android.net.Uri;
-import android.support.annotation.Nullable;
 import com.google.android.exoplayer2.C;
+
+import android.net.Uri;
+
 import java.io.EOFException;
 import java.io.IOException;
 import java.io.RandomAccessFile;
+
+import androidx.annotation.Nullable;
 
 /** A {@link DataSource} for reading local files. */
 public final class FileDataSource extends BaseDataSource {

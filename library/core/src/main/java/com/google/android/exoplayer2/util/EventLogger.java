@@ -15,9 +15,6 @@
  */
 package com.google.android.exoplayer2.util;
 
-import android.os.SystemClock;
-import android.support.annotation.Nullable;
-import android.view.Surface;
 import com.google.android.exoplayer2.C;
 import com.google.android.exoplayer2.ExoPlaybackException;
 import com.google.android.exoplayer2.Format;
@@ -36,9 +33,15 @@ import com.google.android.exoplayer2.trackselection.MappingTrackSelector;
 import com.google.android.exoplayer2.trackselection.MappingTrackSelector.MappedTrackInfo;
 import com.google.android.exoplayer2.trackselection.TrackSelection;
 import com.google.android.exoplayer2.trackselection.TrackSelectionArray;
+
+import android.os.SystemClock;
+import android.view.Surface;
+
 import java.io.IOException;
 import java.text.NumberFormat;
 import java.util.Locale;
+
+import androidx.annotation.Nullable;
 
 /** Logs events from {@link Player} and other core components using {@link Log}. */
 @SuppressWarnings("UngroupedOverloads")

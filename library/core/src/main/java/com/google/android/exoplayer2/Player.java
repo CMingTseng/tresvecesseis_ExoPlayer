@@ -15,13 +15,6 @@
  */
 package com.google.android.exoplayer2;
 
-import android.os.Looper;
-import android.support.annotation.IntDef;
-import android.support.annotation.Nullable;
-import android.view.Surface;
-import android.view.SurfaceHolder;
-import android.view.SurfaceView;
-import android.view.TextureView;
 import com.google.android.exoplayer2.C.VideoScalingMode;
 import com.google.android.exoplayer2.audio.AudioAttributes;
 import com.google.android.exoplayer2.audio.AudioListener;
@@ -33,9 +26,19 @@ import com.google.android.exoplayer2.util.Util;
 import com.google.android.exoplayer2.video.VideoFrameMetadataListener;
 import com.google.android.exoplayer2.video.VideoListener;
 import com.google.android.exoplayer2.video.spherical.CameraMotionListener;
+
+import android.os.Looper;
+import android.view.Surface;
+import android.view.SurfaceHolder;
+import android.view.SurfaceView;
+import android.view.TextureView;
+
 import java.lang.annotation.Documented;
 import java.lang.annotation.Retention;
 import java.lang.annotation.RetentionPolicy;
+
+import androidx.annotation.IntDef;
+import androidx.annotation.Nullable;
 
 /**
  * A media player interface defining traditional high-level functionality, such as the ability to
@@ -318,7 +321,8 @@ public interface Player {
      * @param reason The {@link TimelineChangeReason} responsible for this timeline change.
      */
     default void onTimelineChanged(
-        Timeline timeline, @Nullable Object manifest, @TimelineChangeReason int reason) {}
+            Timeline timeline, @Nullable Object manifest, @TimelineChangeReason int reason) {
+    }
 
     /**
      * Called when the available or selected tracks change.

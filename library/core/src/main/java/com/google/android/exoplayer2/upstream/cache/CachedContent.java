@@ -15,13 +15,15 @@
  */
 package com.google.android.exoplayer2.upstream.cache;
 
-import android.support.annotation.Nullable;
 import com.google.android.exoplayer2.upstream.cache.Cache.CacheException;
 import com.google.android.exoplayer2.util.Assertions;
+
 import java.io.DataInputStream;
 import java.io.DataOutputStream;
 import java.io.IOException;
 import java.util.TreeSet;
+
+import androidx.annotation.Nullable;
 
 /**
  * Defines the cached content for a single stream.

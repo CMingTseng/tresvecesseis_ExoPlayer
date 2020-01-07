@@ -15,11 +15,14 @@
  */
 package com.google.android.exoplayer2.source;
 
+import com.google.android.exoplayer2.C;
+
 import android.os.Parcel;
 import android.os.Parcelable;
-import android.support.annotation.Nullable;
-import com.google.android.exoplayer2.C;
+
 import java.util.Arrays;
+
+import androidx.annotation.Nullable;
 
 /** An array of {@link TrackGroup}s exposed by a {@link MediaPeriod}. */
 public final class TrackGroupArray implements Parcelable {

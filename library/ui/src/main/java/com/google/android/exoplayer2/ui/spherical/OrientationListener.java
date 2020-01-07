@@ -15,15 +15,17 @@
  */
 package com.google.android.exoplayer2.ui.spherical;
 
+import com.google.android.exoplayer2.video.spherical.FrameRotationQueue;
+
 import android.hardware.Sensor;
 import android.hardware.SensorEvent;
 import android.hardware.SensorEventListener;
 import android.hardware.SensorManager;
 import android.opengl.Matrix;
-import android.support.annotation.BinderThread;
 import android.view.Display;
 import android.view.Surface;
-import com.google.android.exoplayer2.video.spherical.FrameRotationQueue;
+
+import androidx.annotation.BinderThread;
 
 /**
  * Listens for orientation sensor events, converts event data to rotation matrix and roll value, and

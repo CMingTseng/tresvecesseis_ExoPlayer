@@ -15,19 +15,22 @@
  */
 package com.google.android.exoplayer2.upstream;
 
-import android.content.Context;
-import android.os.Handler;
-import android.support.annotation.Nullable;
-import android.util.SparseArray;
 import com.google.android.exoplayer2.C;
 import com.google.android.exoplayer2.util.Assertions;
 import com.google.android.exoplayer2.util.Clock;
 import com.google.android.exoplayer2.util.EventDispatcher;
 import com.google.android.exoplayer2.util.SlidingPercentile;
 import com.google.android.exoplayer2.util.Util;
+
+import android.content.Context;
+import android.os.Handler;
+import android.util.SparseArray;
+
 import java.util.Collections;
 import java.util.HashMap;
 import java.util.Map;
+
+import androidx.annotation.Nullable;
 
 /**
  * Estimates bandwidth by listening to data transfers.

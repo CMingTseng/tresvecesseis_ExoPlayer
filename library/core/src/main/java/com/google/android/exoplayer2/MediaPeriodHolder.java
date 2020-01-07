@@ -15,7 +15,6 @@
  */
 package com.google.android.exoplayer2;
 
-import android.support.annotation.Nullable;
 import com.google.android.exoplayer2.source.ClippingMediaPeriod;
 import com.google.android.exoplayer2.source.EmptySampleStream;
 import com.google.android.exoplayer2.source.MediaPeriod;
@@ -29,7 +28,10 @@ import com.google.android.exoplayer2.trackselection.TrackSelectorResult;
 import com.google.android.exoplayer2.upstream.Allocator;
 import com.google.android.exoplayer2.util.Assertions;
 import com.google.android.exoplayer2.util.Log;
+
 import org.checkerframework.checker.nullness.compatqual.NullableType;
+
+import androidx.annotation.Nullable;
 
 /** Holds a {@link MediaPeriod} with information required to play it as part of a timeline. */
 /* package */ final class MediaPeriodHolder {

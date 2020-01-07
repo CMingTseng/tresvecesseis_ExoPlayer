@@ -15,8 +15,9 @@
  */
 package com.google.android.exoplayer2.ui;
 
-import android.support.annotation.Nullable;
 import android.view.View;
+
+import androidx.annotation.Nullable;
 
 /**
  * Interface for time bar views that can display a playback position, buffered position, duration

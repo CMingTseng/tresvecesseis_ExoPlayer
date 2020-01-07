@@ -15,16 +15,20 @@
  */
 package com.google.android.exoplayer2.upstream.crypto;
 
-import android.net.Uri;
-import android.support.annotation.Nullable;
 import com.google.android.exoplayer2.C;
 import com.google.android.exoplayer2.upstream.DataSource;
 import com.google.android.exoplayer2.upstream.DataSpec;
 import com.google.android.exoplayer2.upstream.TransferListener;
+
+import android.net.Uri;
+
 import java.io.IOException;
 import java.util.List;
 import java.util.Map;
+
 import javax.crypto.Cipher;
+
+import androidx.annotation.Nullable;
 
 /**
  * A {@link DataSource} that decrypts the data read from an upstream source.

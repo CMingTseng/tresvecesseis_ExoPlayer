@@ -15,6 +15,10 @@
  */
 package com.google.android.exoplayer2.scheduler;
 
+import com.google.android.exoplayer2.util.Assertions;
+import com.google.android.exoplayer2.util.Log;
+import com.google.android.exoplayer2.util.Util;
+
 import android.annotation.TargetApi;
 import android.content.BroadcastReceiver;
 import android.content.Context;
@@ -27,10 +31,8 @@ import android.net.NetworkRequest;
 import android.os.Handler;
 import android.os.Looper;
 import android.os.PowerManager;
-import android.support.annotation.RequiresApi;
-import com.google.android.exoplayer2.util.Assertions;
-import com.google.android.exoplayer2.util.Log;
-import com.google.android.exoplayer2.util.Util;
+
+import androidx.annotation.RequiresApi;
 
 /**
  * Watches whether the {@link Requirements} are met and notifies the {@link Listener} on changes.

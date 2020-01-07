@@ -15,6 +15,12 @@
  */
 package com.google.android.exoplayer2.mediacodec;
 
+import com.google.android.exoplayer2.Format;
+import com.google.android.exoplayer2.util.Assertions;
+import com.google.android.exoplayer2.util.Log;
+import com.google.android.exoplayer2.util.MimeTypes;
+import com.google.android.exoplayer2.util.Util;
+
 import android.annotation.TargetApi;
 import android.graphics.Point;
 import android.media.MediaCodec;
@@ -22,13 +28,9 @@ import android.media.MediaCodecInfo.AudioCapabilities;
 import android.media.MediaCodecInfo.CodecCapabilities;
 import android.media.MediaCodecInfo.CodecProfileLevel;
 import android.media.MediaCodecInfo.VideoCapabilities;
-import android.support.annotation.Nullable;
 import android.util.Pair;
-import com.google.android.exoplayer2.Format;
-import com.google.android.exoplayer2.util.Assertions;
-import com.google.android.exoplayer2.util.Log;
-import com.google.android.exoplayer2.util.MimeTypes;
-import com.google.android.exoplayer2.util.Util;
+
+import androidx.annotation.Nullable;
 
 /** Information about a {@link MediaCodec} for a given mime type. */
 @TargetApi(16)

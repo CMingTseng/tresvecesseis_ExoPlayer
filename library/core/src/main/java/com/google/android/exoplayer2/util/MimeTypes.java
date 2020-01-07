@@ -15,10 +15,13 @@
  */
 package com.google.android.exoplayer2.util;
 
-import android.support.annotation.Nullable;
-import android.text.TextUtils;
 import com.google.android.exoplayer2.C;
+
+import android.text.TextUtils;
+
 import java.util.ArrayList;
+
+import androidx.annotation.Nullable;
 
 /**
  * Defines common MIME types and helper methods.

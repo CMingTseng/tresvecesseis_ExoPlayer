@@ -15,23 +15,26 @@
  */
 package com.google.android.exoplayer2;
 
+import com.google.android.exoplayer2.PlayerMessage.Target;
+import com.google.android.exoplayer2.audio.AuxEffectInfo;
+import com.google.android.exoplayer2.util.Util;
+import com.google.android.exoplayer2.video.VideoFrameMetadataListener;
+import com.google.android.exoplayer2.video.spherical.CameraMotionListener;
+
 import android.annotation.TargetApi;
 import android.content.Context;
 import android.media.AudioFormat;
 import android.media.AudioManager;
 import android.media.MediaCodec;
 import android.media.MediaFormat;
-import android.support.annotation.IntDef;
 import android.view.Surface;
-import com.google.android.exoplayer2.PlayerMessage.Target;
-import com.google.android.exoplayer2.audio.AuxEffectInfo;
-import com.google.android.exoplayer2.util.Util;
-import com.google.android.exoplayer2.video.VideoFrameMetadataListener;
-import com.google.android.exoplayer2.video.spherical.CameraMotionListener;
+
 import java.lang.annotation.Documented;
 import java.lang.annotation.Retention;
 import java.lang.annotation.RetentionPolicy;
 import java.util.UUID;
+
+import androidx.annotation.IntDef;
 
 /**
  * Defines constants used by the library.

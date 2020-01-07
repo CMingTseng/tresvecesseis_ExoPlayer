@@ -15,18 +15,21 @@
  */
 package com.google.android.exoplayer2.drm;
 
+import com.google.android.exoplayer2.drm.DrmInitData.SchemeData;
+
 import android.media.DeniedByServerException;
 import android.media.MediaCryptoException;
 import android.media.MediaDrm;
 import android.media.MediaDrmException;
 import android.media.NotProvisionedException;
 import android.os.Handler;
-import android.support.annotation.Nullable;
-import com.google.android.exoplayer2.drm.DrmInitData.SchemeData;
+
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 import java.util.UUID;
+
+import androidx.annotation.Nullable;
 
 /**
  * Used to obtain keys for decrypting protected media streams. See {@link android.media.MediaDrm}.

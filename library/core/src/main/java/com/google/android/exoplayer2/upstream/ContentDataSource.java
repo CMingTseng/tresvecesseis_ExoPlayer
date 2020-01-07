@@ -15,17 +15,20 @@
  */
 package com.google.android.exoplayer2.upstream;
 
+import com.google.android.exoplayer2.C;
+
 import android.content.ContentResolver;
 import android.content.Context;
 import android.content.res.AssetFileDescriptor;
 import android.net.Uri;
-import android.support.annotation.Nullable;
-import com.google.android.exoplayer2.C;
+
 import java.io.EOFException;
 import java.io.FileInputStream;
 import java.io.FileNotFoundException;
 import java.io.IOException;
 import java.nio.channels.FileChannel;
+
+import androidx.annotation.Nullable;
 
 /** A {@link DataSource} for reading from a content URI. */
 public final class ContentDataSource extends BaseDataSource {

@@ -15,11 +15,14 @@
  */
 package com.google.android.exoplayer2.audio;
 
-import android.media.AudioTrack;
-import android.support.annotation.Nullable;
 import com.google.android.exoplayer2.C;
 import com.google.android.exoplayer2.PlaybackParameters;
+
+import android.media.AudioTrack;
+
 import java.nio.ByteBuffer;
+
+import androidx.annotation.Nullable;
 
 /**
  * A sink that consumes audio data.

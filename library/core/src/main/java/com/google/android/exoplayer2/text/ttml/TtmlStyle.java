@@ -15,13 +15,16 @@
  */
 package com.google.android.exoplayer2.text.ttml;
 
-import android.graphics.Typeface;
-import android.support.annotation.IntDef;
-import android.text.Layout;
 import com.google.android.exoplayer2.util.Assertions;
+
+import android.graphics.Typeface;
+import android.text.Layout;
+
 import java.lang.annotation.Documented;
 import java.lang.annotation.Retention;
 import java.lang.annotation.RetentionPolicy;
+
+import androidx.annotation.IntDef;
 
 /**
  * Style object of a <code>TtmlNode</code>

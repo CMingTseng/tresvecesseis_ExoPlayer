@@ -15,16 +15,19 @@
  */
 package com.google.android.exoplayer2.text.webvtt;
 
-import android.graphics.Typeface;
-import android.support.annotation.IntDef;
-import android.text.Layout;
 import com.google.android.exoplayer2.util.Util;
+
+import android.graphics.Typeface;
+import android.text.Layout;
+
 import java.lang.annotation.Documented;
 import java.lang.annotation.Retention;
 import java.lang.annotation.RetentionPolicy;
 import java.util.Arrays;
 import java.util.Collections;
 import java.util.List;
+
+import androidx.annotation.IntDef;
 
 /**
  * Style object of a Css style block in a Webvtt file.

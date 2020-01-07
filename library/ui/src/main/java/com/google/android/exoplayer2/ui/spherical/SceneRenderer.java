@@ -15,12 +15,6 @@
  */
 package com.google.android.exoplayer2.ui.spherical;
 
-import static com.google.android.exoplayer2.util.GlUtil.checkGlError;
-
-import android.graphics.SurfaceTexture;
-import android.opengl.GLES20;
-import android.opengl.Matrix;
-import android.support.annotation.Nullable;
 import com.google.android.exoplayer2.C;
 import com.google.android.exoplayer2.Format;
 import com.google.android.exoplayer2.util.Assertions;
@@ -31,9 +25,19 @@ import com.google.android.exoplayer2.video.spherical.CameraMotionListener;
 import com.google.android.exoplayer2.video.spherical.FrameRotationQueue;
 import com.google.android.exoplayer2.video.spherical.Projection;
 import com.google.android.exoplayer2.video.spherical.ProjectionDecoder;
+
+import android.graphics.SurfaceTexture;
+import android.opengl.GLES20;
+import android.opengl.Matrix;
+
+import org.checkerframework.checker.nullness.qual.MonotonicNonNull;
+
 import java.util.Arrays;
 import java.util.concurrent.atomic.AtomicBoolean;
-import org.checkerframework.checker.nullness.qual.MonotonicNonNull;
+
+import androidx.annotation.Nullable;
+
+import static com.google.android.exoplayer2.util.GlUtil.checkGlError;
 
 /** Renders a GL Scene. */
 /* package */ class SceneRenderer implements VideoFrameMetadataListener, CameraMotionListener {
@@ -54,7 +58,8 @@ import org.checkerframework.checker.nullness.qual.MonotonicNonNull;
   // Used by other threads only
   private volatile @C.StreamType int defaultStereoMode;
   private @C.StreamType int lastStereoMode;
-  private @Nullable byte[] lastProjectionData;
+  private @Nullable
+  byte[] lastProjectionData;
 
   // Methods called on any thread.
 

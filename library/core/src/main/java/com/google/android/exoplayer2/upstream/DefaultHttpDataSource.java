@@ -15,15 +15,16 @@
  */
 package com.google.android.exoplayer2.upstream;
 
-import android.net.Uri;
-import android.support.annotation.Nullable;
-import android.text.TextUtils;
 import com.google.android.exoplayer2.C;
 import com.google.android.exoplayer2.upstream.DataSpec.HttpMethod;
 import com.google.android.exoplayer2.util.Assertions;
 import com.google.android.exoplayer2.util.Log;
 import com.google.android.exoplayer2.util.Predicate;
 import com.google.android.exoplayer2.util.Util;
+
+import android.net.Uri;
+import android.text.TextUtils;
+
 import java.io.EOFException;
 import java.io.IOException;
 import java.io.InputStream;
@@ -40,6 +41,8 @@ import java.util.Map;
 import java.util.concurrent.atomic.AtomicReference;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
+
+import androidx.annotation.Nullable;
 
 /**
  * An {@link HttpDataSource} that uses Android's {@link HttpURLConnection}.

@@ -15,13 +15,16 @@
  */
 package com.google.android.exoplayer2.mediacodec;
 
-import android.annotation.TargetApi;
-import android.media.MediaFormat;
-import android.support.annotation.Nullable;
 import com.google.android.exoplayer2.Format;
 import com.google.android.exoplayer2.video.ColorInfo;
+
+import android.annotation.TargetApi;
+import android.media.MediaFormat;
+
 import java.nio.ByteBuffer;
 import java.util.List;
+
+import androidx.annotation.Nullable;
 
 /** Helper class for configuring {@link MediaFormat} instances. */
 @TargetApi(16)

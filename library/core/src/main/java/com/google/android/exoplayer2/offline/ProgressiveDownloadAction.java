@@ -15,13 +15,16 @@
  */
 package com.google.android.exoplayer2.offline;
 
-import android.net.Uri;
-import android.support.annotation.Nullable;
 import com.google.android.exoplayer2.upstream.cache.CacheUtil;
 import com.google.android.exoplayer2.util.Util;
+
+import android.net.Uri;
+
 import java.io.DataInputStream;
 import java.io.DataOutputStream;
 import java.io.IOException;
+
+import androidx.annotation.Nullable;
 
 /** An action to download or remove downloaded progressive streams. */
 public final class ProgressiveDownloadAction extends DownloadAction {

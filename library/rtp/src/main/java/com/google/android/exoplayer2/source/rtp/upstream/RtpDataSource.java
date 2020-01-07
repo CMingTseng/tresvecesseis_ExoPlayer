@@ -15,7 +15,6 @@
  */
 package com.google.android.exoplayer2.source.rtp.upstream;
 
-import android.support.annotation.IntDef;
 
 import com.google.android.exoplayer2.source.rtp.RtpPacket;
 import com.google.android.exoplayer2.source.rtp.rtcp.RtcpCompoundPacket;
@@ -29,7 +28,9 @@ import java.io.IOException;
 import java.lang.annotation.Retention;
 import java.lang.annotation.RetentionPolicy;
 
-public final class RtpDataSource extends UdpDataSinkSource  {
+import androidx.annotation.IntDef;
+
+public final class RtpDataSource extends UdpDataSinkSource {
 
     @Retention(RetentionPolicy.SOURCE)
     @IntDef(flag = true, value = {FLAG_ENABLE_RTCP_FEEDBACK, FLAG_FORCE_RTCP_MULTIPLEXING})

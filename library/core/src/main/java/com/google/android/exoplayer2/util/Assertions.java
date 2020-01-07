@@ -15,11 +15,14 @@
  */
 package com.google.android.exoplayer2.util;
 
-import android.os.Looper;
-import android.support.annotation.Nullable;
-import android.text.TextUtils;
 import com.google.android.exoplayer2.ExoPlayerLibraryInfo;
+
+import android.os.Looper;
+import android.text.TextUtils;
+
 import org.checkerframework.checker.nullness.qual.EnsuresNonNull;
+
+import androidx.annotation.Nullable;
 
 /**
  * Provides methods for asserting the truth of expressions and properties.

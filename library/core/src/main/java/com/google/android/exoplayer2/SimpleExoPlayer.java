@@ -15,19 +15,6 @@
  */
 package com.google.android.exoplayer2;
 
-import android.annotation.TargetApi;
-import android.content.Context;
-import android.graphics.Rect;
-import android.graphics.SurfaceTexture;
-import android.media.MediaCodec;
-import android.media.PlaybackParams;
-import android.os.Handler;
-import android.os.Looper;
-import android.support.annotation.Nullable;
-import android.view.Surface;
-import android.view.SurfaceHolder;
-import android.view.SurfaceView;
-import android.view.TextureView;
 import com.google.android.exoplayer2.analytics.AnalyticsCollector;
 import com.google.android.exoplayer2.analytics.AnalyticsListener;
 import com.google.android.exoplayer2.audio.AudioAttributes;
@@ -54,10 +41,26 @@ import com.google.android.exoplayer2.util.Util;
 import com.google.android.exoplayer2.video.VideoFrameMetadataListener;
 import com.google.android.exoplayer2.video.VideoRendererEventListener;
 import com.google.android.exoplayer2.video.spherical.CameraMotionListener;
+
+import android.annotation.TargetApi;
+import android.content.Context;
+import android.graphics.Rect;
+import android.graphics.SurfaceTexture;
+import android.media.MediaCodec;
+import android.media.PlaybackParams;
+import android.os.Handler;
+import android.os.Looper;
+import android.view.Surface;
+import android.view.SurfaceHolder;
+import android.view.SurfaceView;
+import android.view.TextureView;
+
 import java.util.ArrayList;
 import java.util.Collections;
 import java.util.List;
 import java.util.concurrent.CopyOnWriteArraySet;
+
+import androidx.annotation.Nullable;
 
 /**
  * An {@link ExoPlayer} implementation that uses default {@link Renderer} components. Instances can

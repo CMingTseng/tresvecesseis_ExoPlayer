@@ -15,9 +15,11 @@
  */
 package com.google.android.exoplayer2.upstream.cache;
 
-import android.net.Uri;
-import android.support.annotation.Nullable;
 import com.google.android.exoplayer2.C;
+
+import android.net.Uri;
+
+import androidx.annotation.Nullable;
 
 /** Helper classes to easily access and modify internal metadata values. */
 /* package */ final class ContentMetadataInternal {

@@ -15,10 +15,11 @@
  */
 package com.google.android.exoplayer2.source.rtp.rtcp;
 
-import android.support.annotation.IntDef;
 
 import java.lang.annotation.Retention;
 import java.lang.annotation.RetentionPolicy;
+
+import androidx.annotation.IntDef;
 
 /**
  * This class wraps a RTCP SDES Item.

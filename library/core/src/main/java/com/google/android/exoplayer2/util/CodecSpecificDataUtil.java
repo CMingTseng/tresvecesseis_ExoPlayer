@@ -15,13 +15,16 @@
  */
 package com.google.android.exoplayer2.util;
 
-import android.support.annotation.Nullable;
-import android.util.Base64;
-import android.util.Pair;
 import com.google.android.exoplayer2.C;
 import com.google.android.exoplayer2.ParserException;
+
+import android.util.Base64;
+import android.util.Pair;
+
 import java.util.ArrayList;
 import java.util.List;
+
+import androidx.annotation.Nullable;
 
 /**
  * Provides static utility methods for manipulating various types of codec specific data.

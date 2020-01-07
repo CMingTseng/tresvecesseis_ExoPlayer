@@ -15,9 +15,11 @@
  */
 package com.google.android.exoplayer2.text.cea;
 
-import android.support.annotation.NonNull;
-import android.text.Layout.Alignment;
 import com.google.android.exoplayer2.text.Cue;
+
+import android.text.Layout.Alignment;
+
+import androidx.annotation.NonNull;
 
 /**
  * A {@link Cue} for CEA-708.

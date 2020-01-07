@@ -15,17 +15,20 @@
  */
 package com.google.android.exoplayer2.upstream;
 
-import android.net.Uri;
-import android.support.annotation.Nullable;
 import com.google.android.exoplayer2.C;
 import com.google.android.exoplayer2.ParserException;
 import com.google.android.exoplayer2.upstream.Loader.Loadable;
 import com.google.android.exoplayer2.util.Assertions;
 import com.google.android.exoplayer2.util.Util;
+
+import android.net.Uri;
+
 import java.io.IOException;
 import java.io.InputStream;
 import java.util.List;
 import java.util.Map;
+
+import androidx.annotation.Nullable;
 
 /**
  * A {@link Loadable} for objects that can be parsed from binary data using a {@link Parser}.

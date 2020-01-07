@@ -15,17 +15,15 @@
  */
 package com.google.android.exoplayer2.source.rtsp.core;
 
-import android.net.Uri;
-import android.support.annotation.IntDef;
-
-
-import com.google.android.exoplayer2.source.rtsp.message.InterleavedFrame;
 import com.google.android.exoplayer2.source.rtsp.message.Header;
+import com.google.android.exoplayer2.source.rtsp.message.InterleavedFrame;
 import com.google.android.exoplayer2.source.rtsp.message.Message;
 import com.google.android.exoplayer2.source.rtsp.message.Method;
 import com.google.android.exoplayer2.source.rtsp.message.Request;
 import com.google.android.exoplayer2.source.rtsp.message.Response;
 import com.google.android.exoplayer2.source.rtsp.message.Status;
+
+import android.net.Uri;
 
 import java.io.IOException;
 import java.lang.annotation.Retention;
@@ -42,7 +40,10 @@ import java.util.concurrent.ExecutorService;
 import java.util.concurrent.Executors;
 import java.util.concurrent.Future;
 import java.util.concurrent.RejectedExecutionException;
+
 import javax.net.SocketFactory;
+
+import androidx.annotation.IntDef;
 
 import static com.google.android.exoplayer2.source.rtsp.message.Protocol.RTSP_1_0;
 

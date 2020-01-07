@@ -16,8 +16,10 @@
 package com.google.android.exoplayer2.upstream;
 
 import android.net.Uri;
-import android.support.annotation.Nullable;
+
 import java.io.IOException;
+
+import androidx.annotation.Nullable;
 
 /**
  * A dummy DataSource which provides no data. {@link #open(DataSpec)} throws {@link IOException}.

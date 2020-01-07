@@ -17,11 +17,12 @@ package com.google.android.exoplayer2.ui.spherical;
 
 import android.content.Context;
 import android.graphics.PointF;
-import android.support.annotation.BinderThread;
-import android.support.annotation.Nullable;
 import android.view.GestureDetector;
 import android.view.MotionEvent;
 import android.view.View;
+
+import androidx.annotation.BinderThread;
+import androidx.annotation.Nullable;
 
 /**
  * Basic touch input system.

@@ -17,9 +17,11 @@ package com.google.android.exoplayer2.metadata;
 
 import android.os.Parcel;
 import android.os.Parcelable;
-import android.support.annotation.Nullable;
+
 import java.util.Arrays;
 import java.util.List;
+
+import androidx.annotation.Nullable;
 
 /**
  * A collection of metadata entries.

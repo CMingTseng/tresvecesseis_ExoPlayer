@@ -15,10 +15,11 @@
  */
 package com.google.android.exoplayer2.drm;
 
-import android.support.annotation.IntDef;
 import java.lang.annotation.Documented;
 import java.lang.annotation.Retention;
 import java.lang.annotation.RetentionPolicy;
+
+import androidx.annotation.IntDef;
 
 /**
  * Thrown when the requested DRM scheme is not supported.

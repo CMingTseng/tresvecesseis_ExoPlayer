@@ -15,10 +15,13 @@
  */
 package com.google.android.exoplayer2.drm;
 
-import android.support.annotation.Nullable;
-import android.util.Pair;
 import com.google.android.exoplayer2.C;
+
+import android.util.Pair;
+
 import java.util.Map;
+
+import androidx.annotation.Nullable;
 
 /**
  * Utility methods for Widevine.

@@ -15,7 +15,6 @@
  */
 package com.google.android.exoplayer2.source.rtp.extractor;
 
-import android.support.annotation.IntDef;
 
 import com.google.android.exoplayer2.C;
 import com.google.android.exoplayer2.Format;
@@ -28,6 +27,8 @@ import com.google.android.exoplayer2.util.TrackIdGenerator;
 
 import java.lang.annotation.Retention;
 import java.lang.annotation.RetentionPolicy;
+
+import androidx.annotation.IntDef;
 
 /**
  * Extracts individual audio samples from G.711 RTP payload

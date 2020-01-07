@@ -15,16 +15,19 @@
  */
 package com.google.android.exoplayer2.source;
 
-import android.os.Handler;
-import android.support.annotation.CallSuper;
-import android.support.annotation.Nullable;
 import com.google.android.exoplayer2.ExoPlayer;
 import com.google.android.exoplayer2.Timeline;
 import com.google.android.exoplayer2.upstream.TransferListener;
 import com.google.android.exoplayer2.util.Assertions;
 import com.google.android.exoplayer2.util.Util;
+
+import android.os.Handler;
+
 import java.io.IOException;
 import java.util.HashMap;
+
+import androidx.annotation.CallSuper;
+import androidx.annotation.Nullable;
 
 /**
  * Composite {@link MediaSource} consisting of multiple child sources.
@@ -258,7 +261,7 @@ public abstract class CompositeMediaSource<T> extends BaseMediaSource {
 
     @Override
     public void onUpstreamDiscarded(
-        int windowIndex, @Nullable MediaPeriodId mediaPeriodId, MediaLoadData mediaLoadData) {
+            int windowIndex, @Nullable MediaPeriodId mediaPeriodId, MediaLoadData mediaLoadData) {
       if (maybeUpdateEventDispatcher(windowIndex, mediaPeriodId)) {
         eventDispatcher.upstreamDiscarded(maybeUpdateMediaLoadData(mediaLoadData));
       }

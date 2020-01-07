@@ -15,12 +15,6 @@
  */
 package com.google.android.exoplayer2.source.rtsp.core;
 
-import android.net.Uri;
-import android.os.Handler;
-import android.os.SystemClock;
-import android.support.annotation.IntDef;
-import android.util.Log;
-
 import com.google.android.exoplayer2.C;
 import com.google.android.exoplayer2.ExoPlayer;
 import com.google.android.exoplayer2.source.MediaSource;
@@ -33,10 +27,13 @@ import com.google.android.exoplayer2.source.rtsp.auth.AuthScheme;
 import com.google.android.exoplayer2.source.rtsp.auth.BasicCredentials;
 import com.google.android.exoplayer2.source.rtsp.auth.Credentials;
 import com.google.android.exoplayer2.source.rtsp.auth.DigestCredentials;
-import com.google.android.exoplayer2.source.rtsp.message.InterleavedFrame;
+import com.google.android.exoplayer2.source.rtsp.media.MediaFormat;
+import com.google.android.exoplayer2.source.rtsp.media.MediaSession;
+import com.google.android.exoplayer2.source.rtsp.media.MediaTrack;
+import com.google.android.exoplayer2.source.rtsp.media.MediaType;
 import com.google.android.exoplayer2.source.rtsp.message.Header;
 import com.google.android.exoplayer2.source.rtsp.message.Headers;
-import com.google.android.exoplayer2.source.rtsp.media.MediaType;
+import com.google.android.exoplayer2.source.rtsp.message.InterleavedFrame;
 import com.google.android.exoplayer2.source.rtsp.message.MessageBody;
 import com.google.android.exoplayer2.source.rtsp.message.Method;
 import com.google.android.exoplayer2.source.rtsp.message.Range;
@@ -44,15 +41,17 @@ import com.google.android.exoplayer2.source.rtsp.message.Request;
 import com.google.android.exoplayer2.source.rtsp.message.Response;
 import com.google.android.exoplayer2.source.rtsp.message.Status;
 import com.google.android.exoplayer2.source.rtsp.message.Transport;
-import com.google.android.exoplayer2.source.rtsp.media.MediaFormat;
-import com.google.android.exoplayer2.source.rtsp.media.MediaSession;
-import com.google.android.exoplayer2.source.rtsp.media.MediaTrack;
 import com.google.android.exoplayer2.source.sdp.MediaDescription;
 import com.google.android.exoplayer2.source.sdp.SessionDescription;
 import com.google.android.exoplayer2.source.sdp.core.Attribute;
 import com.google.android.exoplayer2.source.sdp.core.Bandwidth;
 import com.google.android.exoplayer2.source.sdp.core.Media;
 import com.google.android.exoplayer2.util.InetUtil;
+
+import android.net.Uri;
+import android.os.Handler;
+import android.os.SystemClock;
+import android.util.Log;
 
 import java.io.IOException;
 import java.lang.annotation.Retention;
@@ -61,6 +60,8 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
+
+import androidx.annotation.IntDef;
 
 public abstract class Client implements Dispatcher.EventListener {
 

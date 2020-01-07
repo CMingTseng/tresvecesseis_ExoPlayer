@@ -15,10 +15,11 @@
  */
 package com.google.android.exoplayer2.upstream;
 
-import static com.google.android.exoplayer2.util.Util.castNonNull;
-
-import android.support.annotation.Nullable;
 import java.util.ArrayList;
+
+import androidx.annotation.Nullable;
+
+import static com.google.android.exoplayer2.util.Util.castNonNull;
 
 /**
  * Base {@link DataSource} implementation to keep a list of {@link TransferListener}s.

@@ -15,11 +15,14 @@
  */
 package com.google.android.exoplayer2.upstream;
 
-import android.net.Uri;
-import android.support.annotation.Nullable;
 import com.google.android.exoplayer2.C;
 import com.google.android.exoplayer2.util.Assertions;
+
+import android.net.Uri;
+
 import java.io.IOException;
+
+import androidx.annotation.Nullable;
 
 /** A {@link DataSource} for reading from a byte array. */
 public final class ByteArrayDataSource extends BaseDataSource {

@@ -15,15 +15,18 @@
  */
 package com.google.android.exoplayer2.source.ads;
 
-import android.net.Uri;
-import android.support.annotation.CheckResult;
-import android.support.annotation.IntDef;
 import com.google.android.exoplayer2.C;
 import com.google.android.exoplayer2.util.Assertions;
+
+import android.net.Uri;
+
 import java.lang.annotation.Documented;
 import java.lang.annotation.Retention;
 import java.lang.annotation.RetentionPolicy;
 import java.util.Arrays;
+
+import androidx.annotation.CheckResult;
+import androidx.annotation.IntDef;
 
 /**
  * Represents ad group times relative to the start of the media and information on the state and

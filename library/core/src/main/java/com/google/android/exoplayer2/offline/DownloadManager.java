@@ -15,18 +15,6 @@
  */
 package com.google.android.exoplayer2.offline;
 
-import static com.google.android.exoplayer2.offline.DownloadManager.TaskState.STATE_CANCELED;
-import static com.google.android.exoplayer2.offline.DownloadManager.TaskState.STATE_COMPLETED;
-import static com.google.android.exoplayer2.offline.DownloadManager.TaskState.STATE_FAILED;
-import static com.google.android.exoplayer2.offline.DownloadManager.TaskState.STATE_QUEUED;
-import static com.google.android.exoplayer2.offline.DownloadManager.TaskState.STATE_STARTED;
-
-import android.os.ConditionVariable;
-import android.os.Handler;
-import android.os.HandlerThread;
-import android.os.Looper;
-import android.support.annotation.IntDef;
-import android.support.annotation.Nullable;
 import com.google.android.exoplayer2.C;
 import com.google.android.exoplayer2.offline.DownloadAction.Deserializer;
 import com.google.android.exoplayer2.upstream.DataSource;
@@ -34,6 +22,12 @@ import com.google.android.exoplayer2.upstream.cache.Cache;
 import com.google.android.exoplayer2.util.Assertions;
 import com.google.android.exoplayer2.util.Log;
 import com.google.android.exoplayer2.util.Util;
+
+import android.os.ConditionVariable;
+import android.os.Handler;
+import android.os.HandlerThread;
+import android.os.Looper;
+
 import java.io.ByteArrayInputStream;
 import java.io.File;
 import java.io.IOException;
@@ -43,6 +37,15 @@ import java.lang.annotation.RetentionPolicy;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.concurrent.CopyOnWriteArraySet;
+
+import androidx.annotation.IntDef;
+import androidx.annotation.Nullable;
+
+import static com.google.android.exoplayer2.offline.DownloadManager.TaskState.STATE_CANCELED;
+import static com.google.android.exoplayer2.offline.DownloadManager.TaskState.STATE_COMPLETED;
+import static com.google.android.exoplayer2.offline.DownloadManager.TaskState.STATE_FAILED;
+import static com.google.android.exoplayer2.offline.DownloadManager.TaskState.STATE_QUEUED;
+import static com.google.android.exoplayer2.offline.DownloadManager.TaskState.STATE_STARTED;
 
 /**
  * Manages multiple stream download and remove requests.

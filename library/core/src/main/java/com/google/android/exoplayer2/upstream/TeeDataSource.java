@@ -15,13 +15,16 @@
  */
 package com.google.android.exoplayer2.upstream;
 
-import android.net.Uri;
-import android.support.annotation.Nullable;
 import com.google.android.exoplayer2.C;
 import com.google.android.exoplayer2.util.Assertions;
+
+import android.net.Uri;
+
 import java.io.IOException;
 import java.util.List;
 import java.util.Map;
+
+import androidx.annotation.Nullable;
 
 /**
  * Tees data into a {@link DataSink} as the data is read.

@@ -15,6 +15,13 @@
  */
 package com.google.android.exoplayer2.drm;
 
+import com.google.android.exoplayer2.C;
+import com.google.android.exoplayer2.drm.DrmInitData.SchemeData;
+import com.google.android.exoplayer2.extractor.mp4.PsshAtomUtil;
+import com.google.android.exoplayer2.util.Assertions;
+import com.google.android.exoplayer2.util.MimeTypes;
+import com.google.android.exoplayer2.util.Util;
+
 import android.annotation.SuppressLint;
 import android.annotation.TargetApi;
 import android.media.DeniedByServerException;
@@ -24,19 +31,15 @@ import android.media.MediaDrm;
 import android.media.MediaDrmException;
 import android.media.NotProvisionedException;
 import android.media.UnsupportedSchemeException;
-import android.support.annotation.Nullable;
 import android.text.TextUtils;
-import com.google.android.exoplayer2.C;
-import com.google.android.exoplayer2.drm.DrmInitData.SchemeData;
-import com.google.android.exoplayer2.extractor.mp4.PsshAtomUtil;
-import com.google.android.exoplayer2.util.Assertions;
-import com.google.android.exoplayer2.util.MimeTypes;
-import com.google.android.exoplayer2.util.Util;
+
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 import java.util.UUID;
+
+import androidx.annotation.Nullable;
 
 /**
  * An {@link ExoMediaDrm} implementation that wraps the framework {@link MediaDrm}.

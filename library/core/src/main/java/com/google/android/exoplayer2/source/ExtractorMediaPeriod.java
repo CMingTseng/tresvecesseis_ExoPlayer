@@ -15,9 +15,6 @@
  */
 package com.google.android.exoplayer2.source;
 
-import android.net.Uri;
-import android.os.Handler;
-import android.support.annotation.Nullable;
 import com.google.android.exoplayer2.C;
 import com.google.android.exoplayer2.Format;
 import com.google.android.exoplayer2.FormatHolder;
@@ -46,10 +43,17 @@ import com.google.android.exoplayer2.util.Assertions;
 import com.google.android.exoplayer2.util.ConditionVariable;
 import com.google.android.exoplayer2.util.MimeTypes;
 import com.google.android.exoplayer2.util.Util;
+
+import android.net.Uri;
+import android.os.Handler;
+
+import org.checkerframework.checker.nullness.compatqual.NullableType;
+
 import java.io.EOFException;
 import java.io.IOException;
 import java.util.Arrays;
-import org.checkerframework.checker.nullness.compatqual.NullableType;
+
+import androidx.annotation.Nullable;
 
 /**
  * A {@link MediaPeriod} that extracts data using an {@link Extractor}.

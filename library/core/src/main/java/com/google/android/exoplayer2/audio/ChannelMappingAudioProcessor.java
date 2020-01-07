@@ -15,14 +15,16 @@
  */
 package com.google.android.exoplayer2.audio;
 
-import android.support.annotation.Nullable;
 import com.google.android.exoplayer2.C;
 import com.google.android.exoplayer2.C.Encoding;
 import com.google.android.exoplayer2.Format;
 import com.google.android.exoplayer2.util.Assertions;
+
 import java.nio.ByteBuffer;
 import java.nio.ByteOrder;
 import java.util.Arrays;
+
+import androidx.annotation.Nullable;
 
 /**
  * An {@link AudioProcessor} that applies a mapping from input channels onto specified output

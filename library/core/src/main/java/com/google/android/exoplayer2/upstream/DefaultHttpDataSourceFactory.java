@@ -15,9 +15,10 @@
  */
 package com.google.android.exoplayer2.upstream;
 
-import android.support.annotation.Nullable;
 import com.google.android.exoplayer2.upstream.HttpDataSource.BaseFactory;
 import com.google.android.exoplayer2.upstream.HttpDataSource.Factory;
+
+import androidx.annotation.Nullable;
 
 /** A {@link Factory} that produces {@link DefaultHttpDataSource} instances. */
 public final class DefaultHttpDataSourceFactory extends BaseFactory {

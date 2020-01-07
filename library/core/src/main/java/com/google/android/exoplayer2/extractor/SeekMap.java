@@ -15,9 +15,10 @@
  */
 package com.google.android.exoplayer2.extractor;
 
-import android.support.annotation.Nullable;
 import com.google.android.exoplayer2.C;
 import com.google.android.exoplayer2.util.Assertions;
+
+import androidx.annotation.Nullable;
 
 /**
  * Maps seek positions (in microseconds) to corresponding positions (byte offsets) in the stream.

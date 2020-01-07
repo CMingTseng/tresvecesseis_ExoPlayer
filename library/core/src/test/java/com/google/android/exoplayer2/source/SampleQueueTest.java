@@ -15,15 +15,6 @@
  */
 package com.google.android.exoplayer2.source;
 
-import static com.google.android.exoplayer2.C.RESULT_BUFFER_READ;
-import static com.google.android.exoplayer2.C.RESULT_FORMAT_READ;
-import static com.google.android.exoplayer2.C.RESULT_NOTHING_READ;
-import static com.google.android.exoplayer2.source.SampleQueue.ADVANCE_FAILED;
-import static com.google.common.truth.Truth.assertThat;
-import static java.lang.Long.MIN_VALUE;
-import static java.util.Arrays.copyOfRange;
-
-import android.support.annotation.Nullable;
 import com.google.android.exoplayer2.C;
 import com.google.android.exoplayer2.Format;
 import com.google.android.exoplayer2.FormatHolder;
@@ -32,11 +23,22 @@ import com.google.android.exoplayer2.testutil.TestUtil;
 import com.google.android.exoplayer2.upstream.Allocator;
 import com.google.android.exoplayer2.upstream.DefaultAllocator;
 import com.google.android.exoplayer2.util.ParsableByteArray;
+
 import org.junit.After;
 import org.junit.Before;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.robolectric.RobolectricTestRunner;
+
+import androidx.annotation.Nullable;
+
+import static com.google.android.exoplayer2.C.RESULT_BUFFER_READ;
+import static com.google.android.exoplayer2.C.RESULT_FORMAT_READ;
+import static com.google.android.exoplayer2.C.RESULT_NOTHING_READ;
+import static com.google.android.exoplayer2.source.SampleQueue.ADVANCE_FAILED;
+import static com.google.common.truth.Truth.assertThat;
+import static java.lang.Long.MIN_VALUE;
+import static java.util.Arrays.copyOfRange;
 
 /**
  * Test for {@link SampleQueue}.

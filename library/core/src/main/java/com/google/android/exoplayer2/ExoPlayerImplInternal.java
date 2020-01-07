@@ -15,15 +15,6 @@
  */
 package com.google.android.exoplayer2;
 
-import android.os.Handler;
-import android.os.HandlerThread;
-import android.os.Looper;
-import android.os.Message;
-import android.os.Process;
-import android.os.SystemClock;
-import android.support.annotation.NonNull;
-import android.support.annotation.Nullable;
-import android.util.Pair;
 import com.google.android.exoplayer2.DefaultMediaClock.PlaybackParameterListener;
 import com.google.android.exoplayer2.Player.DiscontinuityReason;
 import com.google.android.exoplayer2.source.MediaPeriod;
@@ -41,9 +32,21 @@ import com.google.android.exoplayer2.util.HandlerWrapper;
 import com.google.android.exoplayer2.util.Log;
 import com.google.android.exoplayer2.util.TraceUtil;
 import com.google.android.exoplayer2.util.Util;
+
+import android.os.Handler;
+import android.os.HandlerThread;
+import android.os.Looper;
+import android.os.Message;
+import android.os.Process;
+import android.os.SystemClock;
+import android.util.Pair;
+
 import java.io.IOException;
 import java.util.ArrayList;
 import java.util.Collections;
+
+import androidx.annotation.NonNull;
+import androidx.annotation.Nullable;
 
 /** Implements the internal behavior of {@link ExoPlayerImpl}. */
 /* package */ final class ExoPlayerImplInternal
@@ -1338,7 +1341,8 @@ import java.util.Collections;
    * @return The uid in the new timeline of the first subsequent period, or null if no such period
    *     was found.
    */
-  private @Nullable Object resolveSubsequentPeriod(
+  private @Nullable
+  Object resolveSubsequentPeriod(
       Object oldPeriodUid, Timeline oldTimeline, Timeline newTimeline) {
     int oldPeriodIndex = oldTimeline.getIndexOfPeriod(oldPeriodUid);
     int newPeriodIndex = C.INDEX_UNSET;

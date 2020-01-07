@@ -15,10 +15,12 @@
  */
 package com.google.android.exoplayer2.trackselection;
 
-import android.support.annotation.Nullable;
 import com.google.android.exoplayer2.RendererConfiguration;
 import com.google.android.exoplayer2.util.Util;
+
 import org.checkerframework.checker.nullness.compatqual.NullableType;
+
+import androidx.annotation.Nullable;
 
 /**
  * The result of a {@link TrackSelector} operation.

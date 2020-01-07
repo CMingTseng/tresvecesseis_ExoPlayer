@@ -15,9 +15,9 @@
  */
 package com.google.android.exoplayer2.source.rtsp.auth;
 
-import android.support.annotation.Nullable;
-
 import java.io.IOException;
+
+import androidx.annotation.Nullable;
 
 public enum AuthScheme {
     BASIC("Basic"),

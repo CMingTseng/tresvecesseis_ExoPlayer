@@ -15,11 +15,13 @@
  */
 package com.google.android.exoplayer2.upstream;
 
-import android.support.annotation.NonNull;
 import com.google.android.exoplayer2.C;
 import com.google.android.exoplayer2.util.Assertions;
+
 import java.io.IOException;
 import java.io.InputStream;
+
+import androidx.annotation.NonNull;
 
 /**
  * Allows data corresponding to a given {@link DataSpec} to be read from a {@link DataSource} and

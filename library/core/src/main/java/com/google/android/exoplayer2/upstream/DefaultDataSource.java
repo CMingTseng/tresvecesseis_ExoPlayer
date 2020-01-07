@@ -15,16 +15,19 @@
  */
 package com.google.android.exoplayer2.upstream;
 
-import android.content.Context;
-import android.net.Uri;
-import android.support.annotation.Nullable;
 import com.google.android.exoplayer2.util.Assertions;
 import com.google.android.exoplayer2.util.Log;
 import com.google.android.exoplayer2.util.Util;
+
+import android.content.Context;
+import android.net.Uri;
+
 import java.io.IOException;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Map;
+
+import androidx.annotation.Nullable;
 
 /**
  * A {@link DataSource} that supports multiple URI schemes. The supported schemes are:

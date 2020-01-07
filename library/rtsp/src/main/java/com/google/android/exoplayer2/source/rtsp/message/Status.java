@@ -15,9 +15,9 @@
  */
 package com.google.android.exoplayer2.source.rtsp.message;
 
-import android.support.annotation.Nullable;
-
 import java.io.IOException;
+
+import androidx.annotation.Nullable;
 
 public enum Status {
     Continue(100),

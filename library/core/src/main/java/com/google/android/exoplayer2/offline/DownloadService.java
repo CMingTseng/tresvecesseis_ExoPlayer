@@ -15,15 +15,6 @@
  */
 package com.google.android.exoplayer2.offline;
 
-import android.app.Notification;
-import android.app.Service;
-import android.content.Context;
-import android.content.Intent;
-import android.os.Handler;
-import android.os.IBinder;
-import android.os.Looper;
-import android.support.annotation.Nullable;
-import android.support.annotation.StringRes;
 import com.google.android.exoplayer2.offline.DownloadManager.TaskState;
 import com.google.android.exoplayer2.scheduler.Requirements;
 import com.google.android.exoplayer2.scheduler.RequirementsWatcher;
@@ -31,8 +22,20 @@ import com.google.android.exoplayer2.scheduler.Scheduler;
 import com.google.android.exoplayer2.util.Log;
 import com.google.android.exoplayer2.util.NotificationUtil;
 import com.google.android.exoplayer2.util.Util;
+
+import android.app.Notification;
+import android.app.Service;
+import android.content.Context;
+import android.content.Intent;
+import android.os.Handler;
+import android.os.IBinder;
+import android.os.Looper;
+
 import java.io.IOException;
 import java.util.HashMap;
+
+import androidx.annotation.Nullable;
+import androidx.annotation.StringRes;
 
 /** A {@link Service} for downloading media. */
 public abstract class DownloadService extends Service {

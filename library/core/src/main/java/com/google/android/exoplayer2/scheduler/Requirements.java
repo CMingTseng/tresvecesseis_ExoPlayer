@@ -15,6 +15,9 @@
  */
 package com.google.android.exoplayer2.scheduler;
 
+import com.google.android.exoplayer2.util.Log;
+import com.google.android.exoplayer2.util.Util;
+
 import android.content.Context;
 import android.content.Intent;
 import android.content.IntentFilter;
@@ -24,12 +27,12 @@ import android.net.NetworkCapabilities;
 import android.net.NetworkInfo;
 import android.os.BatteryManager;
 import android.os.PowerManager;
-import android.support.annotation.IntDef;
-import com.google.android.exoplayer2.util.Log;
-import com.google.android.exoplayer2.util.Util;
+
 import java.lang.annotation.Documented;
 import java.lang.annotation.Retention;
 import java.lang.annotation.RetentionPolicy;
+
+import androidx.annotation.IntDef;
 
 /**
  * Defines a set of device state requirements.

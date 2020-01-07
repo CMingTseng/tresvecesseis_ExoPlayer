@@ -15,13 +15,15 @@
  */
 package com.google.android.exoplayer2;
 
-import android.support.annotation.IntDef;
 import com.google.android.exoplayer2.source.MediaSource;
 import com.google.android.exoplayer2.util.Assertions;
+
 import java.io.IOException;
 import java.lang.annotation.Documented;
 import java.lang.annotation.Retention;
 import java.lang.annotation.RetentionPolicy;
+
+import androidx.annotation.IntDef;
 
 /**
  * Thrown when a non-recoverable playback failure occurs.

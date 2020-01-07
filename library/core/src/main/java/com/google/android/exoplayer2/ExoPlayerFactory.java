@@ -15,9 +15,6 @@
  */
 package com.google.android.exoplayer2;
 
-import android.content.Context;
-import android.os.Looper;
-import android.support.annotation.Nullable;
 import com.google.android.exoplayer2.analytics.AnalyticsCollector;
 import com.google.android.exoplayer2.audio.AudioAttributes;
 import com.google.android.exoplayer2.drm.DrmSessionManager;
@@ -28,6 +25,11 @@ import com.google.android.exoplayer2.upstream.BandwidthMeter;
 import com.google.android.exoplayer2.upstream.DefaultBandwidthMeter;
 import com.google.android.exoplayer2.util.Clock;
 import com.google.android.exoplayer2.util.Util;
+
+import android.content.Context;
+import android.os.Looper;
+
+import androidx.annotation.Nullable;
 
 /**
  * A factory for {@link ExoPlayer} instances.

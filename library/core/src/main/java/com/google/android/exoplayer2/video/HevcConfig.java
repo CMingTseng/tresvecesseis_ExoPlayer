@@ -15,12 +15,14 @@
  */
 package com.google.android.exoplayer2.video;
 
-import android.support.annotation.Nullable;
 import com.google.android.exoplayer2.ParserException;
 import com.google.android.exoplayer2.util.NalUnitUtil;
 import com.google.android.exoplayer2.util.ParsableByteArray;
+
 import java.util.Collections;
 import java.util.List;
+
+import androidx.annotation.Nullable;
 
 /**
  * HEVC configuration data.

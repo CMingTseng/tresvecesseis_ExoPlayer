@@ -15,11 +15,12 @@
  */
 package com.google.android.exoplayer2.source.rtsp.media;
 
-import android.support.annotation.Nullable;
 
 import java.util.Locale;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
+
+import androidx.annotation.Nullable;
 
 /**
  * An Media Type, appropriate to describe the content type of an RTSP request or response body.

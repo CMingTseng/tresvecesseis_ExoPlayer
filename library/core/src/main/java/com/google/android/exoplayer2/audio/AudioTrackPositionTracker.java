@@ -15,20 +15,23 @@
  */
 package com.google.android.exoplayer2.audio;
 
-import static com.google.android.exoplayer2.util.Util.castNonNull;
+import com.google.android.exoplayer2.C;
+import com.google.android.exoplayer2.util.Assertions;
+import com.google.android.exoplayer2.util.Util;
 
 import android.media.AudioTimestamp;
 import android.media.AudioTrack;
 import android.os.SystemClock;
-import android.support.annotation.IntDef;
-import android.support.annotation.Nullable;
-import com.google.android.exoplayer2.C;
-import com.google.android.exoplayer2.util.Assertions;
-import com.google.android.exoplayer2.util.Util;
+
 import java.lang.annotation.Documented;
 import java.lang.annotation.Retention;
 import java.lang.annotation.RetentionPolicy;
 import java.lang.reflect.Method;
+
+import androidx.annotation.IntDef;
+import androidx.annotation.Nullable;
+
+import static com.google.android.exoplayer2.util.Util.castNonNull;
 
 /**
  * Wraps an {@link AudioTrack}, exposing a position based on {@link

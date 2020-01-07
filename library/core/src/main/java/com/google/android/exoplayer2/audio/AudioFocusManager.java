@@ -15,12 +15,6 @@
  */
 package com.google.android.exoplayer2.audio;
 
-import android.content.Context;
-import android.media.AudioFocusRequest;
-import android.media.AudioManager;
-import android.support.annotation.IntDef;
-import android.support.annotation.Nullable;
-import android.support.annotation.RequiresApi;
 import com.google.android.exoplayer2.C;
 import com.google.android.exoplayer2.ExoPlayer;
 import com.google.android.exoplayer2.Player;
@@ -28,10 +22,20 @@ import com.google.android.exoplayer2.source.MediaSource;
 import com.google.android.exoplayer2.util.Assertions;
 import com.google.android.exoplayer2.util.Log;
 import com.google.android.exoplayer2.util.Util;
+
+import android.content.Context;
+import android.media.AudioFocusRequest;
+import android.media.AudioManager;
+
+import org.checkerframework.checker.nullness.qual.MonotonicNonNull;
+
 import java.lang.annotation.Documented;
 import java.lang.annotation.Retention;
 import java.lang.annotation.RetentionPolicy;
-import org.checkerframework.checker.nullness.qual.MonotonicNonNull;
+
+import androidx.annotation.IntDef;
+import androidx.annotation.Nullable;
+import androidx.annotation.RequiresApi;
 
 /** Manages requesting and responding to changes in audio focus. */
 public final class AudioFocusManager {

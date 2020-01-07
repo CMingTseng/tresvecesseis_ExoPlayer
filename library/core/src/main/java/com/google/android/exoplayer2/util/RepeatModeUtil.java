@@ -15,11 +15,13 @@
  */
 package com.google.android.exoplayer2.util;
 
-import android.support.annotation.IntDef;
 import com.google.android.exoplayer2.Player;
+
 import java.lang.annotation.Documented;
 import java.lang.annotation.Retention;
 import java.lang.annotation.RetentionPolicy;
+
+import androidx.annotation.IntDef;
 
 /**
  * Util class for repeat mode handling.

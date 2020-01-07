@@ -15,7 +15,6 @@
  */
 package com.google.android.exoplayer2.extractor.mp4;
 
-import android.support.annotation.Nullable;
 import com.google.android.exoplayer2.metadata.Metadata;
 import com.google.android.exoplayer2.metadata.id3.ApicFrame;
 import com.google.android.exoplayer2.metadata.id3.CommentFrame;
@@ -25,6 +24,8 @@ import com.google.android.exoplayer2.metadata.id3.TextInformationFrame;
 import com.google.android.exoplayer2.util.Log;
 import com.google.android.exoplayer2.util.ParsableByteArray;
 import com.google.android.exoplayer2.util.Util;
+
+import androidx.annotation.Nullable;
 
 /**
  * Parses metadata items stored in ilst atoms.

@@ -15,12 +15,14 @@
  */
 package com.google.android.exoplayer2.extractor.mp4;
 
-import android.support.annotation.Nullable;
 import com.google.android.exoplayer2.util.ParsableByteArray;
 import com.google.android.exoplayer2.util.Util;
+
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
+
+import androidx.annotation.Nullable;
 
 @SuppressWarnings("ConstantField")
 /* package*/ abstract class Atom {

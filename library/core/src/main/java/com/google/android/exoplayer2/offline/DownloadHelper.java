@@ -15,12 +15,15 @@
  */
 package com.google.android.exoplayer2.offline;
 
+import com.google.android.exoplayer2.source.TrackGroupArray;
+
 import android.os.Handler;
 import android.os.Looper;
-import android.support.annotation.Nullable;
-import com.google.android.exoplayer2.source.TrackGroupArray;
+
 import java.io.IOException;
 import java.util.List;
+
+import androidx.annotation.Nullable;
 
 /** A helper for initializing and removing downloads. */
 public abstract class DownloadHelper {

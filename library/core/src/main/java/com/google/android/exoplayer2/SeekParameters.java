@@ -15,8 +15,9 @@
  */
 package com.google.android.exoplayer2;
 
-import android.support.annotation.Nullable;
 import com.google.android.exoplayer2.util.Assertions;
+
+import androidx.annotation.Nullable;
 
 /**
  * Parameters that apply to seeking.

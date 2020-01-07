@@ -15,7 +15,6 @@
  */
 package com.google.android.exoplayer2.source.rtp.extractor;
 
-import android.support.annotation.NonNull;
 
 import com.google.android.exoplayer2.ParserException;
 import com.google.android.exoplayer2.extractor.ExtractorOutput;
@@ -23,6 +22,8 @@ import com.google.android.exoplayer2.extractor.TrackOutput;
 import com.google.android.exoplayer2.source.rtp.format.RtpPayloadFormat;
 import com.google.android.exoplayer2.util.ParsableByteArray;
 import com.google.android.exoplayer2.util.TrackIdGenerator;
+
+import androidx.annotation.NonNull;
 
 /**
  * Parses RTP packet payload data

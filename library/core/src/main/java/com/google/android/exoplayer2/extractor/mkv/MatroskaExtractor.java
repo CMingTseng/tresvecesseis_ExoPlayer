@@ -15,10 +15,6 @@
  */
 package com.google.android.exoplayer2.extractor.mkv;
 
-import android.support.annotation.IntDef;
-import android.support.annotation.Nullable;
-import android.util.Pair;
-import android.util.SparseArray;
 import com.google.android.exoplayer2.C;
 import com.google.android.exoplayer2.Format;
 import com.google.android.exoplayer2.ParserException;
@@ -44,6 +40,10 @@ import com.google.android.exoplayer2.util.Util;
 import com.google.android.exoplayer2.video.AvcConfig;
 import com.google.android.exoplayer2.video.ColorInfo;
 import com.google.android.exoplayer2.video.HevcConfig;
+
+import android.util.Pair;
+import android.util.SparseArray;
+
 import java.io.IOException;
 import java.lang.annotation.Documented;
 import java.lang.annotation.Retention;
@@ -56,6 +56,9 @@ import java.util.Collections;
 import java.util.List;
 import java.util.Locale;
 import java.util.UUID;
+
+import androidx.annotation.IntDef;
+import androidx.annotation.Nullable;
 
 /**
  * Extracts data from the Matroska and WebM container formats.

@@ -15,8 +15,12 @@
  */
 package com.google.android.exoplayer2.text.webvtt;
 
+import com.google.android.exoplayer2.text.Cue;
+import com.google.android.exoplayer2.util.Log;
+import com.google.android.exoplayer2.util.ParsableByteArray;
+import com.google.android.exoplayer2.util.Util;
+
 import android.graphics.Typeface;
-import android.support.annotation.NonNull;
 import android.text.Layout.Alignment;
 import android.text.Spannable;
 import android.text.SpannableStringBuilder;
@@ -31,10 +35,7 @@ import android.text.style.StrikethroughSpan;
 import android.text.style.StyleSpan;
 import android.text.style.TypefaceSpan;
 import android.text.style.UnderlineSpan;
-import com.google.android.exoplayer2.text.Cue;
-import com.google.android.exoplayer2.util.Log;
-import com.google.android.exoplayer2.util.ParsableByteArray;
-import com.google.android.exoplayer2.util.Util;
+
 import java.util.ArrayDeque;
 import java.util.ArrayList;
 import java.util.Arrays;
@@ -42,6 +43,8 @@ import java.util.Collections;
 import java.util.List;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
+
+import androidx.annotation.NonNull;
 
 /**
  * Parser for WebVTT cues. (https://w3c.github.io/webvtt/#cues)

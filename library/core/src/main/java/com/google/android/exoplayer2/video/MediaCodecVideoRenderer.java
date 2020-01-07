@@ -15,20 +15,6 @@
  */
 package com.google.android.exoplayer2.video;
 
-import android.annotation.SuppressLint;
-import android.annotation.TargetApi;
-import android.content.Context;
-import android.graphics.Point;
-import android.media.MediaCodec;
-import android.media.MediaCodecInfo.CodecCapabilities;
-import android.media.MediaCrypto;
-import android.media.MediaFormat;
-import android.os.Handler;
-import android.os.SystemClock;
-import android.support.annotation.CallSuper;
-import android.support.annotation.NonNull;
-import android.support.annotation.Nullable;
-import android.view.Surface;
 import com.google.android.exoplayer2.C;
 import com.google.android.exoplayer2.ExoPlaybackException;
 import com.google.android.exoplayer2.ExoPlayer;
@@ -50,8 +36,25 @@ import com.google.android.exoplayer2.util.MimeTypes;
 import com.google.android.exoplayer2.util.TraceUtil;
 import com.google.android.exoplayer2.util.Util;
 import com.google.android.exoplayer2.video.VideoRendererEventListener.EventDispatcher;
+
+import android.annotation.SuppressLint;
+import android.annotation.TargetApi;
+import android.content.Context;
+import android.graphics.Point;
+import android.media.MediaCodec;
+import android.media.MediaCodecInfo.CodecCapabilities;
+import android.media.MediaCrypto;
+import android.media.MediaFormat;
+import android.os.Handler;
+import android.os.SystemClock;
+import android.view.Surface;
+
 import java.nio.ByteBuffer;
 import java.util.List;
+
+import androidx.annotation.CallSuper;
+import androidx.annotation.NonNull;
+import androidx.annotation.Nullable;
 
 /**
  * Decodes and renders video using {@link MediaCodec}.

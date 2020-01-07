@@ -15,13 +15,15 @@
  */
 package com.google.android.exoplayer2.source;
 
-import android.support.annotation.Nullable;
 import com.google.android.exoplayer2.C;
 import com.google.android.exoplayer2.SeekParameters;
 import com.google.android.exoplayer2.source.MediaSource.MediaPeriodId;
 import com.google.android.exoplayer2.trackselection.TrackSelection;
 import com.google.android.exoplayer2.upstream.Allocator;
+
 import java.io.IOException;
+
+import androidx.annotation.Nullable;
 
 /**
  * Media period that wraps a media source and defers calling its {@link

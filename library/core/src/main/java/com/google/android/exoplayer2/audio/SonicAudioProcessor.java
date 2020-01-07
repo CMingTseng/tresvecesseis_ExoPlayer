@@ -15,15 +15,17 @@
  */
 package com.google.android.exoplayer2.audio;
 
-import android.support.annotation.Nullable;
 import com.google.android.exoplayer2.C;
 import com.google.android.exoplayer2.C.Encoding;
 import com.google.android.exoplayer2.Format;
 import com.google.android.exoplayer2.util.Assertions;
 import com.google.android.exoplayer2.util.Util;
+
 import java.nio.ByteBuffer;
 import java.nio.ByteOrder;
 import java.nio.ShortBuffer;
+
+import androidx.annotation.Nullable;
 
 /**
  * An {@link AudioProcessor} that uses the Sonic library to modify audio speed/pitch/sample rate.

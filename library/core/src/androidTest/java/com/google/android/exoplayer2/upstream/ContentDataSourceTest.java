@@ -15,8 +15,8 @@
  */
 package com.google.android.exoplayer2.upstream;
 
-import static com.google.common.truth.Truth.assertThat;
-import static junit.framework.Assert.fail;
+import com.google.android.exoplayer2.C;
+import com.google.android.exoplayer2.testutil.TestUtil;
 
 import android.content.ContentProvider;
 import android.content.ContentResolver;
@@ -27,17 +27,21 @@ import android.net.Uri;
 import android.os.Bundle;
 import android.os.ParcelFileDescriptor;
 import android.support.annotation.NonNull;
-import android.support.annotation.Nullable;
-import androidx.test.InstrumentationRegistry;
-import androidx.test.runner.AndroidJUnit4;
-import com.google.android.exoplayer2.C;
-import com.google.android.exoplayer2.testutil.TestUtil;
+
+import org.junit.Test;
+import org.junit.runner.RunWith;
+
 import java.io.FileNotFoundException;
 import java.io.FileOutputStream;
 import java.io.IOException;
 import java.util.Arrays;
-import org.junit.Test;
-import org.junit.runner.RunWith;
+
+import androidx.annotation.Nullable;
+import androidx.test.InstrumentationRegistry;
+import androidx.test.runner.AndroidJUnit4;
+
+import static com.google.common.truth.Truth.assertThat;
+import static junit.framework.Assert.fail;
 
 /** Unit tests for {@link ContentDataSource}. */
 @RunWith(AndroidJUnit4.class)

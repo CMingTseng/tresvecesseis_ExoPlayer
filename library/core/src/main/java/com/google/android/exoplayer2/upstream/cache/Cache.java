@@ -15,11 +15,12 @@
  */
 package com.google.android.exoplayer2.upstream.cache;
 
-import android.support.annotation.Nullable;
 import java.io.File;
 import java.io.IOException;
 import java.util.NavigableSet;
 import java.util.Set;
+
+import androidx.annotation.Nullable;
 
 /**
  * An interface for cache.

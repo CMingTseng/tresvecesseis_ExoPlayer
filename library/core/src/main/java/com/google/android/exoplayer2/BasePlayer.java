@@ -15,8 +15,9 @@
  */
 package com.google.android.exoplayer2;
 
-import android.support.annotation.Nullable;
 import com.google.android.exoplayer2.util.Util;
+
+import androidx.annotation.Nullable;
 
 /** Abstract base {@link Player} which implements common implementation independent methods. */
 public abstract class BasePlayer implements Player {

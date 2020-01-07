@@ -15,11 +15,12 @@
  */
 package com.google.android.exoplayer2.source.ads;
 
-import android.support.annotation.VisibleForTesting;
 import com.google.android.exoplayer2.C;
 import com.google.android.exoplayer2.Timeline;
 import com.google.android.exoplayer2.source.ForwardingTimeline;
 import com.google.android.exoplayer2.util.Assertions;
+
+import androidx.annotation.VisibleForTesting;
 
 /** A {@link Timeline} for sources that have ads. */
 @VisibleForTesting(otherwise = VisibleForTesting.PACKAGE_PRIVATE)

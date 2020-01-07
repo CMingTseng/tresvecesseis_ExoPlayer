@@ -15,10 +15,6 @@
  */
 package com.google.android.exoplayer2.source.rtsp;
 
-import android.net.Uri;
-import android.os.Handler;
-import android.support.annotation.Nullable;
-
 import com.google.android.exoplayer2.C;
 import com.google.android.exoplayer2.ExoPlayer;
 import com.google.android.exoplayer2.ExoPlayerLibraryInfo;
@@ -34,7 +30,12 @@ import com.google.android.exoplayer2.upstream.DataSpec;
 import com.google.android.exoplayer2.upstream.TransferListener;
 import com.google.android.exoplayer2.util.Assertions;
 
+import android.net.Uri;
+import android.os.Handler;
+
 import java.io.IOException;
+
+import androidx.annotation.Nullable;
 
 import static com.google.android.exoplayer2.C.TCP;
 import static com.google.android.exoplayer2.source.rtsp.core.Client.RTSP_AUTO_DETECT;

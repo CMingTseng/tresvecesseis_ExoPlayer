@@ -15,15 +15,17 @@
  */
 package com.google.android.exoplayer2.video;
 
-import android.os.Handler;
-import android.os.SystemClock;
-import android.support.annotation.Nullable;
-import android.view.Surface;
-import android.view.TextureView;
 import com.google.android.exoplayer2.Format;
 import com.google.android.exoplayer2.Renderer;
 import com.google.android.exoplayer2.decoder.DecoderCounters;
 import com.google.android.exoplayer2.util.Assertions;
+
+import android.os.Handler;
+import android.os.SystemClock;
+import android.view.Surface;
+import android.view.TextureView;
+
+import androidx.annotation.Nullable;
 
 /**
  * Listener of video {@link Renderer} events.

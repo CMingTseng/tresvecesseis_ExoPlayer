@@ -15,14 +15,14 @@
  */
 package com.google.android.exoplayer2.source.rtsp.message;
 
-import android.support.annotation.Nullable;
-
 import com.google.android.exoplayer2.C;
 
 import java.text.ParseException;
 import java.text.SimpleDateFormat;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
+
+import androidx.annotation.Nullable;
 
 public final class Range {
     // We only support the Normal Play Time (npt)

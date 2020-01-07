@@ -15,11 +15,13 @@
  */
 package com.google.android.exoplayer2.metadata.id3;
 
-import static com.google.android.exoplayer2.util.Util.castNonNull;
+import com.google.android.exoplayer2.util.Util;
 
 import android.os.Parcel;
-import android.support.annotation.Nullable;
-import com.google.android.exoplayer2.util.Util;
+
+import androidx.annotation.Nullable;
+
+import static com.google.android.exoplayer2.util.Util.castNonNull;
 
 /** Internal ID3 frame that is intended for use by the player. */
 public final class InternalFrame extends Id3Frame {

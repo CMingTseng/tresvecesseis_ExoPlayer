@@ -15,15 +15,9 @@
  */
 package com.google.android.exoplayer2.source.rtsp.core;
 
-import android.os.Handler;
-import android.os.HandlerThread;
-import android.os.Process;
-import android.support.annotation.IntDef;
-import android.util.Log;
-
-import com.google.android.exoplayer2.source.rtsp.message.InterleavedFrame;
-import com.google.android.exoplayer2.source.rtsp.message.Header;
 import com.google.android.exoplayer2.source.rtsp.media.MediaType;
+import com.google.android.exoplayer2.source.rtsp.message.Header;
+import com.google.android.exoplayer2.source.rtsp.message.InterleavedFrame;
 import com.google.android.exoplayer2.source.rtsp.message.Message;
 import com.google.android.exoplayer2.source.rtsp.message.MessageBody;
 import com.google.android.exoplayer2.source.rtsp.message.Method;
@@ -33,15 +27,21 @@ import com.google.android.exoplayer2.source.rtsp.message.Response;
 import com.google.android.exoplayer2.source.rtsp.message.Status;
 import com.google.android.exoplayer2.util.Util;
 
+import android.os.Handler;
+import android.os.HandlerThread;
+import android.os.Process;
+import android.util.Log;
+
 import java.io.DataInputStream;
 import java.io.IOException;
 import java.io.InputStream;
 import java.lang.annotation.Retention;
 import java.lang.annotation.RetentionPolicy;
-
 import java.util.Arrays;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
+
+import androidx.annotation.IntDef;
 
 /* package */ final class Receiver {
 

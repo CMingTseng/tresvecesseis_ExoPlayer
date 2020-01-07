@@ -15,9 +15,6 @@
  */
 package com.google.android.exoplayer2.source.rtp.format;
 
-import android.support.annotation.IntDef;
-import android.support.annotation.Nullable;
-import android.support.annotation.StringDef;
 
 import com.google.android.exoplayer2.util.MimeTypes;
 
@@ -25,6 +22,10 @@ import java.io.IOException;
 import java.lang.annotation.Retention;
 import java.lang.annotation.RetentionPolicy;
 import java.util.List;
+
+import androidx.annotation.IntDef;
+import androidx.annotation.Nullable;
+import androidx.annotation.StringDef;
 
 public abstract class RtpPayloadFormat {
 

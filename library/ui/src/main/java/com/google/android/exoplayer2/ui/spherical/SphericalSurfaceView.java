@@ -15,6 +15,12 @@
  */
 package com.google.android.exoplayer2.ui.spherical;
 
+
+import com.google.android.exoplayer2.C;
+import com.google.android.exoplayer2.Player;
+import com.google.android.exoplayer2.util.Assertions;
+import com.google.android.exoplayer2.util.Util;
+
 import android.annotation.TargetApi;
 import android.content.Context;
 import android.graphics.PointF;
@@ -26,20 +32,18 @@ import android.opengl.GLSurfaceView;
 import android.opengl.Matrix;
 import android.os.Handler;
 import android.os.Looper;
-import android.support.annotation.AnyThread;
-import android.support.annotation.BinderThread;
-import android.support.annotation.Nullable;
-import android.support.annotation.UiThread;
 import android.util.AttributeSet;
 import android.view.Display;
 import android.view.Surface;
 import android.view.WindowManager;
-import com.google.android.exoplayer2.C;
-import com.google.android.exoplayer2.Player;
-import com.google.android.exoplayer2.util.Assertions;
-import com.google.android.exoplayer2.util.Util;
+
 import javax.microedition.khronos.egl.EGLConfig;
 import javax.microedition.khronos.opengles.GL10;
+
+import androidx.annotation.AnyThread;
+import androidx.annotation.BinderThread;
+import androidx.annotation.Nullable;
+import androidx.annotation.UiThread;
 
 /**
  * Renders a GL scene in a non-VR Activity that is affected by phone orientation and touch input.
@@ -79,14 +83,16 @@ public final class SphericalSurfaceView extends GLSurfaceView {
   /* package */ static final float UPRIGHT_ROLL = (float) Math.PI;
 
   private final SensorManager sensorManager;
-  private final @Nullable Sensor orientationSensor;
+    private final @Nullable
+    Sensor orientationSensor;
   private final OrientationListener orientationListener;
   private final Renderer renderer;
   private final Handler mainHandler;
   private final TouchTracker touchTracker;
   private final SceneRenderer scene;
   private @Nullable SurfaceListener surfaceListener;
-  private @Nullable SurfaceTexture surfaceTexture;
+    private @Nullable
+    SurfaceTexture surfaceTexture;
   private @Nullable Surface surface;
   private @Nullable Player.VideoComponent videoComponent;
 

@@ -15,11 +15,6 @@
  */
 package com.google.android.exoplayer2.source.rtsp;
 
-import android.net.Uri;
-import android.os.Handler;
-import android.os.HandlerThread;
-import android.support.annotation.IntDef;
-
 import com.google.android.exoplayer2.C;
 import com.google.android.exoplayer2.Format;
 import com.google.android.exoplayer2.FormatHolder;
@@ -49,11 +44,11 @@ import com.google.android.exoplayer2.source.rtp.upstream.RtcpOutputReportDispatc
 import com.google.android.exoplayer2.source.rtp.upstream.RtpBufferedDataSource;
 import com.google.android.exoplayer2.source.rtp.upstream.RtpDataSource;
 import com.google.android.exoplayer2.source.rtp.upstream.RtpSamplesHolder;
-import com.google.android.exoplayer2.source.rtsp.message.InterleavedFrame;
-import com.google.android.exoplayer2.source.rtsp.message.Transport;
 import com.google.android.exoplayer2.source.rtsp.media.MediaFormat;
 import com.google.android.exoplayer2.source.rtsp.media.MediaSession;
 import com.google.android.exoplayer2.source.rtsp.media.MediaTrack;
+import com.google.android.exoplayer2.source.rtsp.message.InterleavedFrame;
+import com.google.android.exoplayer2.source.rtsp.message.Transport;
 import com.google.android.exoplayer2.trackselection.TrackSelection;
 import com.google.android.exoplayer2.upstream.Allocator;
 import com.google.android.exoplayer2.upstream.DataSource;
@@ -68,6 +63,10 @@ import com.google.android.exoplayer2.util.MimeTypes;
 import com.google.android.exoplayer2.util.TrackIdGenerator;
 import com.google.android.exoplayer2.util.Util;
 
+import android.net.Uri;
+import android.os.Handler;
+import android.os.HandlerThread;
+
 import java.io.EOFException;
 import java.io.IOException;
 import java.lang.annotation.Retention;
@@ -76,6 +75,8 @@ import java.net.InetAddress;
 import java.net.SocketTimeoutException;
 import java.util.Arrays;
 import java.util.Random;
+
+import androidx.annotation.IntDef;
 
 import static android.os.Process.THREAD_PRIORITY_AUDIO;
 import static com.google.android.exoplayer2.extractor.ts.DefaultTsPayloadReaderFactory.FLAG_ALLOW_NON_IDR_KEYFRAMES;

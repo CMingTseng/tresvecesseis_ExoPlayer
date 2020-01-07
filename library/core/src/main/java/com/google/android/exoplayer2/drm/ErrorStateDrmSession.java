@@ -15,9 +15,11 @@
  */
 package com.google.android.exoplayer2.drm;
 
-import android.support.annotation.Nullable;
 import com.google.android.exoplayer2.util.Assertions;
+
 import java.util.Map;
+
+import androidx.annotation.Nullable;
 
 /** A {@link DrmSession} that's in a terminal error state. */
 public final class ErrorStateDrmSession<T extends ExoMediaCrypto> implements DrmSession<T> {

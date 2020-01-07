@@ -15,9 +15,11 @@
  */
 package com.google.android.exoplayer2.upstream;
 
-import android.content.Context;
-import android.support.annotation.Nullable;
 import com.google.android.exoplayer2.upstream.DataSource.Factory;
+
+import android.content.Context;
+
+import androidx.annotation.Nullable;
 
 /**
  * A {@link Factory} that produces {@link DefaultDataSource} instances that delegate to

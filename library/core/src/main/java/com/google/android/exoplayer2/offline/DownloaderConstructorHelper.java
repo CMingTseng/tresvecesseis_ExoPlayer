@@ -15,7 +15,6 @@
  */
 package com.google.android.exoplayer2.offline;
 
-import android.support.annotation.Nullable;
 import com.google.android.exoplayer2.C;
 import com.google.android.exoplayer2.upstream.DataSink;
 import com.google.android.exoplayer2.upstream.DataSource;
@@ -28,6 +27,8 @@ import com.google.android.exoplayer2.upstream.cache.CacheDataSource;
 import com.google.android.exoplayer2.upstream.cache.CacheDataSourceFactory;
 import com.google.android.exoplayer2.upstream.cache.CacheKeyFactory;
 import com.google.android.exoplayer2.util.PriorityTaskManager;
+
+import androidx.annotation.Nullable;
 
 /** A helper class that holds necessary parameters for {@link Downloader} construction. */
 public final class DownloaderConstructorHelper {

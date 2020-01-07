@@ -15,9 +15,11 @@
  */
 package com.google.android.exoplayer2.video;
 
-import static com.google.android.exoplayer2.util.EGLSurfaceTexture.SECURE_MODE_NONE;
-import static com.google.android.exoplayer2.util.EGLSurfaceTexture.SECURE_MODE_PROTECTED_PBUFFER;
-import static com.google.android.exoplayer2.util.EGLSurfaceTexture.SECURE_MODE_SURFACELESS_CONTEXT;
+import com.google.android.exoplayer2.util.Assertions;
+import com.google.android.exoplayer2.util.EGLSurfaceTexture;
+import com.google.android.exoplayer2.util.EGLSurfaceTexture.SecureMode;
+import com.google.android.exoplayer2.util.Log;
+import com.google.android.exoplayer2.util.Util;
 
 import android.annotation.TargetApi;
 import android.content.Context;
@@ -29,15 +31,17 @@ import android.os.Handler;
 import android.os.Handler.Callback;
 import android.os.HandlerThread;
 import android.os.Message;
-import android.support.annotation.Nullable;
 import android.view.Surface;
-import com.google.android.exoplayer2.util.Assertions;
-import com.google.android.exoplayer2.util.EGLSurfaceTexture;
-import com.google.android.exoplayer2.util.EGLSurfaceTexture.SecureMode;
-import com.google.android.exoplayer2.util.Log;
-import com.google.android.exoplayer2.util.Util;
-import javax.microedition.khronos.egl.EGL10;
+
 import org.checkerframework.checker.nullness.qual.MonotonicNonNull;
+
+import javax.microedition.khronos.egl.EGL10;
+
+import androidx.annotation.Nullable;
+
+import static com.google.android.exoplayer2.util.EGLSurfaceTexture.SECURE_MODE_NONE;
+import static com.google.android.exoplayer2.util.EGLSurfaceTexture.SECURE_MODE_PROTECTED_PBUFFER;
+import static com.google.android.exoplayer2.util.EGLSurfaceTexture.SECURE_MODE_SURFACELESS_CONTEXT;
 
 /**
  * A dummy {@link Surface}.

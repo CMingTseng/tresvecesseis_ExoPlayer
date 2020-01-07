@@ -15,10 +15,10 @@
  */
 package com.google.android.exoplayer2.source.sdp.core;
 
-import android.support.annotation.Nullable;
-
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
+
+import androidx.annotation.Nullable;
 
 public final class Attribute {
     private static final Pattern regexSDPAttribute = Pattern.compile("([a-zA-Z_-]*):\\s*(.+)|(\\w+)",

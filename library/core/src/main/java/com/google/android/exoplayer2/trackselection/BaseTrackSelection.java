@@ -15,16 +15,19 @@
  */
 package com.google.android.exoplayer2.trackselection;
 
-import android.os.SystemClock;
-import android.support.annotation.Nullable;
 import com.google.android.exoplayer2.C;
 import com.google.android.exoplayer2.Format;
 import com.google.android.exoplayer2.source.TrackGroup;
 import com.google.android.exoplayer2.source.chunk.MediaChunk;
 import com.google.android.exoplayer2.util.Assertions;
+
+import android.os.SystemClock;
+
 import java.util.Arrays;
 import java.util.Comparator;
 import java.util.List;
+
+import androidx.annotation.Nullable;
 
 /**
  * An abstract base class suitable for most {@link TrackSelection} implementations.

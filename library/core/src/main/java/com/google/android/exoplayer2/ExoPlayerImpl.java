@@ -15,12 +15,6 @@
  */
 package com.google.android.exoplayer2;
 
-import android.annotation.SuppressLint;
-import android.os.Handler;
-import android.os.Looper;
-import android.os.Message;
-import android.support.annotation.Nullable;
-import android.util.Pair;
 import com.google.android.exoplayer2.PlayerMessage.Target;
 import com.google.android.exoplayer2.source.MediaSource;
 import com.google.android.exoplayer2.source.MediaSource.MediaPeriodId;
@@ -34,11 +28,20 @@ import com.google.android.exoplayer2.util.Assertions;
 import com.google.android.exoplayer2.util.Clock;
 import com.google.android.exoplayer2.util.Log;
 import com.google.android.exoplayer2.util.Util;
+
+import android.annotation.SuppressLint;
+import android.os.Handler;
+import android.os.Looper;
+import android.os.Message;
+import android.util.Pair;
+
 import java.util.ArrayDeque;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Set;
 import java.util.concurrent.CopyOnWriteArraySet;
+
+import androidx.annotation.Nullable;
 
 /** An {@link ExoPlayer} implementation. Instances can be obtained from {@link ExoPlayerFactory}. */
 /* package */ final class ExoPlayerImpl extends BasePlayer implements ExoPlayer {

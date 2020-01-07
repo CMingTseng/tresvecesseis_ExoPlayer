@@ -15,12 +15,6 @@
  */
 package com.google.android.exoplayer2.analytics;
 
-import static com.google.common.truth.Truth.assertThat;
-
-import android.os.Handler;
-import android.os.SystemClock;
-import android.support.annotation.Nullable;
-import android.view.Surface;
 import com.google.android.exoplayer2.ExoPlaybackException;
 import com.google.android.exoplayer2.Format;
 import com.google.android.exoplayer2.PlaybackParameters;
@@ -50,15 +44,25 @@ import com.google.android.exoplayer2.testutil.RobolectricUtil;
 import com.google.android.exoplayer2.trackselection.TrackSelectionArray;
 import com.google.android.exoplayer2.util.Util;
 import com.google.android.exoplayer2.video.VideoRendererEventListener;
-import java.io.IOException;
-import java.util.ArrayList;
-import java.util.Iterator;
-import java.util.List;
+
+import android.os.Handler;
+import android.os.SystemClock;
+import android.view.Surface;
+
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.robolectric.RobolectricTestRunner;
 import org.robolectric.RuntimeEnvironment;
 import org.robolectric.annotation.Config;
+
+import java.io.IOException;
+import java.util.ArrayList;
+import java.util.Iterator;
+import java.util.List;
+
+import androidx.annotation.Nullable;
+
+import static com.google.common.truth.Truth.assertThat;
 
 /** Integration test for {@link AnalyticsCollector}. */
 @RunWith(RobolectricTestRunner.class)

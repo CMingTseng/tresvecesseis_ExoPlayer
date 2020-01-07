@@ -15,14 +15,17 @@
  */
 package com.google.android.exoplayer2.source;
 
-import android.os.Handler;
-import android.support.annotation.Nullable;
 import com.google.android.exoplayer2.C;
 import com.google.android.exoplayer2.ExoPlayer;
 import com.google.android.exoplayer2.Timeline;
 import com.google.android.exoplayer2.upstream.Allocator;
 import com.google.android.exoplayer2.upstream.TransferListener;
+
+import android.os.Handler;
+
 import java.io.IOException;
+
+import androidx.annotation.Nullable;
 
 /**
  * Defines and provides media to be played by an {@link ExoPlayer}. A MediaSource has two main

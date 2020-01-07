@@ -15,16 +15,19 @@
  */
 package com.google.android.exoplayer2.audio;
 
+import com.google.android.exoplayer2.C;
+import com.google.android.exoplayer2.util.Util;
+
 import android.annotation.TargetApi;
 import android.media.AudioTimestamp;
 import android.media.AudioTrack;
-import android.support.annotation.IntDef;
-import android.support.annotation.Nullable;
-import com.google.android.exoplayer2.C;
-import com.google.android.exoplayer2.util.Util;
+
 import java.lang.annotation.Documented;
 import java.lang.annotation.Retention;
 import java.lang.annotation.RetentionPolicy;
+
+import androidx.annotation.IntDef;
+import androidx.annotation.Nullable;
 
 /**
  * Polls the {@link AudioTrack} timestamp, if the platform supports it, taking care of polling at

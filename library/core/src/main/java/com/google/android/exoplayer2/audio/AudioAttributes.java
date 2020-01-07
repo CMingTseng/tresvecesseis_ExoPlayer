@@ -15,9 +15,11 @@
  */
 package com.google.android.exoplayer2.audio;
 
-import android.annotation.TargetApi;
-import android.support.annotation.Nullable;
 import com.google.android.exoplayer2.C;
+
+import android.annotation.TargetApi;
+
+import androidx.annotation.Nullable;
 
 /**
  * Attributes for audio playback, which configure the underlying platform

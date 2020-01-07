@@ -15,13 +15,14 @@
  */
 package com.google.android.exoplayer2.source.rtp;
 
-import android.support.annotation.Nullable;
 
 import com.google.android.exoplayer2.extractor.ExtractorInput;
 import com.google.android.exoplayer2.source.rtp.rtcp.RtcpPacket;
 
 import java.io.IOException;
 import java.util.Arrays;
+
+import androidx.annotation.Nullable;
 
 /**
  * This class wraps a RTP packet providing method to convert from a byte array

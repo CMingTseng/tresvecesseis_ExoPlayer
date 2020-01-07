@@ -15,6 +15,17 @@
  */
 package com.google.android.exoplayer2.ui;
 
+
+import com.google.android.exoplayer2.C;
+import com.google.android.exoplayer2.ControlDispatcher;
+import com.google.android.exoplayer2.DefaultControlDispatcher;
+import com.google.android.exoplayer2.PlaybackParameters;
+import com.google.android.exoplayer2.Player;
+import com.google.android.exoplayer2.Timeline;
+import com.google.android.exoplayer2.util.Assertions;
+import com.google.android.exoplayer2.util.NotificationUtil;
+import com.google.android.exoplayer2.util.Util;
+
 import android.app.Notification;
 import android.app.PendingIntent;
 import android.content.BroadcastReceiver;
@@ -25,23 +36,10 @@ import android.graphics.Bitmap;
 import android.graphics.Color;
 import android.os.Handler;
 import android.os.Looper;
-import android.support.annotation.DrawableRes;
-import android.support.annotation.IntDef;
-import android.support.annotation.Nullable;
-import android.support.annotation.StringRes;
-import android.support.v4.app.NotificationCompat;
-import android.support.v4.app.NotificationManagerCompat;
-import android.support.v4.media.app.NotificationCompat.MediaStyle;
 import android.support.v4.media.session.MediaSessionCompat;
-import com.google.android.exoplayer2.C;
-import com.google.android.exoplayer2.ControlDispatcher;
-import com.google.android.exoplayer2.DefaultControlDispatcher;
-import com.google.android.exoplayer2.PlaybackParameters;
-import com.google.android.exoplayer2.Player;
-import com.google.android.exoplayer2.Timeline;
-import com.google.android.exoplayer2.util.Assertions;
-import com.google.android.exoplayer2.util.NotificationUtil;
-import com.google.android.exoplayer2.util.Util;
+
+import org.checkerframework.checker.nullness.qual.RequiresNonNull;
+
 import java.lang.annotation.Documented;
 import java.lang.annotation.Retention;
 import java.lang.annotation.RetentionPolicy;
@@ -50,7 +48,13 @@ import java.util.Collections;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
-import org.checkerframework.checker.nullness.qual.RequiresNonNull;
+
+import androidx.annotation.DrawableRes;
+import androidx.annotation.IntDef;
+import androidx.annotation.Nullable;
+import androidx.annotation.StringRes;
+import androidx.core.app.NotificationCompat;
+import androidx.core.app.NotificationManagerCompat;
 
 /**
  * A notification manager to start, update and cancel a media style notification reflecting the
@@ -316,7 +320,8 @@ public class PlayerNotificationManager {
   private boolean colorized;
   private int defaults;
   private int color;
-  private @DrawableRes int smallIconResourceId;
+  private @DrawableRes
+  int smallIconResourceId;
   private int visibility;
   private @Priority int priority;
   private boolean ongoing;
@@ -794,7 +799,7 @@ public class PlayerNotificationManager {
       }
     }
     // Create a media style notification.
-    MediaStyle mediaStyle = new MediaStyle();
+    androidx.media.app.NotificationCompat.MediaStyle mediaStyle = new androidx.media.app.NotificationCompat.MediaStyle();
     if (mediaSessionToken != null) {
       mediaStyle.setMediaSession(mediaSessionToken);
     }
@@ -1035,15 +1040,15 @@ public class PlayerNotificationManager {
       }
       String action = intent.getAction();
       if (ACTION_PLAY.equals(action) || ACTION_PAUSE.equals(action)) {
-        controlDispatcher.dispatchSetPlayWhenReady(player, ACTION_PLAY.equals(action));
+//        controlDispatcher.dispatchSetPlayWhenReady(player, ACTION_PLAY.equals(action));
       } else if (ACTION_FAST_FORWARD.equals(action) || ACTION_REWIND.equals(action)) {
         long increment = ACTION_FAST_FORWARD.equals(action) ? fastForwardMs : -rewindMs;
-        controlDispatcher.dispatchSeekTo(
-            player, player.getCurrentWindowIndex(), player.getCurrentPosition() + increment);
+//        controlDispatcher.dispatchSeekTo(
+//            player, player.getCurrentWindowIndex(), player.getCurrentPosition() + increment);
       } else if (ACTION_NEXT.equals(action)) {
         int nextWindowIndex = player.getNextWindowIndex();
         if (nextWindowIndex != C.INDEX_UNSET) {
-          controlDispatcher.dispatchSeekTo(player, nextWindowIndex, C.TIME_UNSET);
+//          controlDispatcher.dispatchSeekTo(player, nextWindowIndex, C.TIME_UNSET);
         }
       } else if (ACTION_PREVIOUS.equals(action)) {
         player.getCurrentTimeline().getWindow(player.getCurrentWindowIndex(), window);
@@ -1051,12 +1056,12 @@ public class PlayerNotificationManager {
         if (previousWindowIndex != C.INDEX_UNSET
             && (player.getCurrentPosition() <= MAX_POSITION_FOR_SEEK_TO_PREVIOUS
                 || (window.isDynamic && !window.isSeekable))) {
-          controlDispatcher.dispatchSeekTo(player, previousWindowIndex, C.TIME_UNSET);
+//          controlDispatcher.dispatchSeekTo(player, previousWindowIndex, C.TIME_UNSET);
         } else {
-          controlDispatcher.dispatchSeekTo(player, player.getCurrentWindowIndex(), C.TIME_UNSET);
+//          controlDispatcher.dispatchSeekTo(player, player.getCurrentWindowIndex(), C.TIME_UNSET);
         }
       } else if (ACTION_STOP.equals(action)) {
-        controlDispatcher.dispatchStop(player, true);
+//        controlDispatcher.dispatchStop(player, true);
         stopNotification();
       } else if (customActionReceiver != null && customActions.containsKey(action)) {
         customActionReceiver.onCustomAction(player, action, intent);

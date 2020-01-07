@@ -15,20 +15,23 @@
  */
 package com.google.android.exoplayer2.drm;
 
-import android.media.MediaDrm;
-import android.os.ConditionVariable;
-import android.os.Handler;
-import android.os.HandlerThread;
-import android.support.annotation.Nullable;
-import android.util.Pair;
 import com.google.android.exoplayer2.C;
 import com.google.android.exoplayer2.drm.DefaultDrmSessionManager.Mode;
 import com.google.android.exoplayer2.drm.DrmSession.DrmSessionException;
 import com.google.android.exoplayer2.upstream.HttpDataSource;
 import com.google.android.exoplayer2.upstream.HttpDataSource.Factory;
 import com.google.android.exoplayer2.util.Assertions;
+
+import android.media.MediaDrm;
+import android.os.ConditionVariable;
+import android.os.Handler;
+import android.os.HandlerThread;
+import android.util.Pair;
+
 import java.util.HashMap;
 import java.util.UUID;
+
+import androidx.annotation.Nullable;
 
 /**
  * Helper class to download, renew and release offline licenses.

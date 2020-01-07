@@ -15,11 +15,14 @@
  */
 package com.google.android.exoplayer2.mediacodec;
 
-import android.media.MediaCodec;
-import android.support.annotation.Nullable;
 import com.google.android.exoplayer2.mediacodec.MediaCodecUtil.DecoderQueryException;
+
+import android.media.MediaCodec;
+
 import java.util.Collections;
 import java.util.List;
+
+import androidx.annotation.Nullable;
 
 /**
  * Selector of {@link MediaCodec} instances.

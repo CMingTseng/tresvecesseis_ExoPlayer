@@ -15,10 +15,13 @@
  */
 package com.google.android.exoplayer2.offline;
 
-import android.net.Uri;
-import android.support.annotation.Nullable;
 import com.google.android.exoplayer2.source.TrackGroupArray;
+
+import android.net.Uri;
+
 import java.util.List;
+
+import androidx.annotation.Nullable;
 
 /** A {@link DownloadHelper} for progressive streams. */
 public final class ProgressiveDownloadHelper extends DownloadHelper {

@@ -15,9 +15,10 @@
  */
 package com.google.android.exoplayer2.source.rtsp.message;
 
-import android.support.annotation.Nullable;
 
 import java.util.Map;
+
+import androidx.annotation.Nullable;
 
 /**
  * An RTSP request

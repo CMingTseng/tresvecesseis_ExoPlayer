@@ -15,16 +15,18 @@
  */
 package com.google.android.exoplayer2.extractor;
 
-import android.support.annotation.IntDef;
-import android.support.annotation.Nullable;
 import com.google.android.exoplayer2.C;
 import com.google.android.exoplayer2.util.Assertions;
 import com.google.android.exoplayer2.util.Util;
+
 import java.io.IOException;
 import java.lang.annotation.Documented;
 import java.lang.annotation.Retention;
 import java.lang.annotation.RetentionPolicy;
 import java.nio.ByteBuffer;
+
+import androidx.annotation.IntDef;
+import androidx.annotation.Nullable;
 
 /**
  * A seeker that supports seeking within a stream by searching for the target frame using binary

@@ -15,7 +15,6 @@
  */
 package com.google.android.exoplayer2.trackselection;
 
-import android.support.annotation.Nullable;
 import com.google.android.exoplayer2.C;
 import com.google.android.exoplayer2.ExoPlayerFactory;
 import com.google.android.exoplayer2.Format;
@@ -25,7 +24,10 @@ import com.google.android.exoplayer2.source.chunk.MediaChunkIterator;
 import com.google.android.exoplayer2.upstream.BandwidthMeter;
 import com.google.android.exoplayer2.util.Clock;
 import com.google.android.exoplayer2.util.Util;
+
 import java.util.List;
+
+import androidx.annotation.Nullable;
 
 /**
  * A bandwidth based adaptive {@link TrackSelection}, whose selected track is updated to be the one

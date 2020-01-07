@@ -15,13 +15,15 @@
  */
 package com.google.android.exoplayer2.extractor;
 
-import android.support.annotation.Nullable;
 import com.google.android.exoplayer2.C;
 import com.google.android.exoplayer2.Format;
 import com.google.android.exoplayer2.util.ParsableByteArray;
+
 import java.io.EOFException;
 import java.io.IOException;
 import java.util.Arrays;
+
+import androidx.annotation.Nullable;
 
 /**
  * Receives track level data extracted by an {@link Extractor}.

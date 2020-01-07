@@ -15,15 +15,19 @@
  */
 package com.google.android.exoplayer2.upstream;
 
-import static com.google.common.truth.Truth.assertThat;
+import com.google.android.exoplayer2.C;
 
 import android.net.Uri;
-import android.support.annotation.Nullable;
-import com.google.android.exoplayer2.C;
-import java.io.IOException;
+
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.robolectric.RobolectricTestRunner;
+
+import java.io.IOException;
+
+import androidx.annotation.Nullable;
+
+import static com.google.common.truth.Truth.assertThat;
 
 /** Unit test for {@link BaseDataSource}. */
 @RunWith(RobolectricTestRunner.class)

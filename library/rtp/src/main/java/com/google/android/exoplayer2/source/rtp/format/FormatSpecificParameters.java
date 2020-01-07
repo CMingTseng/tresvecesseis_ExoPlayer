@@ -15,11 +15,12 @@
  */
 package com.google.android.exoplayer2.source.rtp.format;
 
-import android.support.annotation.Nullable;
 
 import java.util.Collections;
 import java.util.LinkedHashMap;
 import java.util.Map;
+
+import androidx.annotation.Nullable;
 
 public class FormatSpecificParameters {
     private final Map<String, FormatSpecificParameter> parameters;

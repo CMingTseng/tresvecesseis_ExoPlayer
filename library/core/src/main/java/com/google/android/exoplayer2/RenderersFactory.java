@@ -15,14 +15,16 @@
  */
 package com.google.android.exoplayer2;
 
-import android.os.Handler;
-import android.support.annotation.Nullable;
 import com.google.android.exoplayer2.audio.AudioRendererEventListener;
 import com.google.android.exoplayer2.drm.DrmSessionManager;
 import com.google.android.exoplayer2.drm.FrameworkMediaCrypto;
 import com.google.android.exoplayer2.metadata.MetadataOutput;
 import com.google.android.exoplayer2.text.TextOutput;
 import com.google.android.exoplayer2.video.VideoRendererEventListener;
+
+import android.os.Handler;
+
+import androidx.annotation.Nullable;
 
 /**
  * Builds {@link Renderer} instances for use by a {@link SimpleExoPlayer}.
