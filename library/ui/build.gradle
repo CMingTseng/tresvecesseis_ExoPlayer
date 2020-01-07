@@ -31,18 +31,21 @@ android {
     buildTypes {
         // Re-enable test coverage when the following issue is fixed:
         // https://issuetracker.google.com/issues/37019591
-        // debug {
-        //    testCoverageEnabled = true
-        // }
+         debug {
+            testCoverageEnabled = true
+         }
     }
 }
 
 dependencies {
-    implementation project(modulePrefix + 'library-core')
+
+//    implementation project(modulePrefix + 'library-core')
+//    implementation project(':865ced05b6_library-core')
+    implementation project(':library_core_865ced05b6')
     implementation 'com.android.support:support-media-compat:' + supportLibraryVersion
     implementation 'com.android.support:support-annotations:' + supportLibraryVersion
     compileOnly 'org.checkerframework:checker-qual:' + checkerframeworkVersion
-    testImplementation project(modulePrefix + 'testutils-robolectric')
+//    testImplementation project(modulePrefix + 'testutils-robolectric')
 }
 
 ext {
